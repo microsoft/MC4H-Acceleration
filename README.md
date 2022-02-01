@@ -1,14 +1,8 @@
-# Project
+# Healthcare Success Acceleration
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> This repo will contain collections of reference material, trainings, templates, and other resources to aide in the acceleration of delivering value on the Microsoft Cloud for Healthcare and other Microsoft platforms
 
-As the maintainer of this project, please make a few updates:
-
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+* [Patient Outreach User Story Training](./PatientOutreach_UserStoryTraining/README.md)
 
 ## Contributing
 
