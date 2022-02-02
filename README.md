@@ -10,8 +10,9 @@
 ## Microsoft Cloud for Healthcare
 | Resource | Description | Type |
 |----|----|----|
-| [Learning Path](https://docs.microsoft.com/en-us/learn/paths/healthcare-in-a-day/) | Gain a foundational understanding of Microsoft Cloud for Healthcare and its core components, including practical hands-on exercises in your own environment | Microsoft Learn
-| [Microsoft Cloud for Healthcare in a Day](https://github.com/microsoft/BAS-Ecosystem-Engineering/tree/main/Microsoft-Cloud-For-Healthcare/In-A-Day) | Learn core functionality and healthcare data model by exploring apps and configuring components | Training Material, including instructor and student resources |
+| [Learning Path](https://docs.microsoft.com/en-us/learn/paths/healthcare-in-a-day/) | Gain a foundational understanding of Microsoft Cloud for Healthcare and its core components, including practical hands-on exercises in your own environment | Microsoft Learn |
+| [Training Environment Preparation](https://docs.microsoft.com/en-us/learn/modules/training-environment-preparation-healthcare/) | Walks through the process of obtaining a training environment to be used with the Learning Path or to support MC4H readiness and trials | Microsoft Learn |
+| [Microsoft Cloud for Healthcare in a Day](https://microsoft.sharepoint.com/teams/IndustryIADTrainers/Shared%20Documents/Forms/AllItems.aspx?id=%2Fteams%2FIndustryIADTrainers%2FShared%20Documents%2FHealthcare%2FIn%20a%20Day%2FContent&p=true) | Learn core functionality and healthcare data model by exploring apps and configuring components | Training Material, including instructor and student resources |
 | [Documentation Landing Page](https://docs.microsoft.com/en-us/industry/healthcare/) | Homepage for documentation, including Overview, Licensing, Set Up Guides, User Guides, What's New, Security & Compliance | Microsoft Docs |
 | [Set up Guide](https://docs.microsoft.com/en-us/industry/healthcare/configure-cloud-for-healthcare) | Top-level set up instructions to deploy Microsoft Cloud for Healthcare components including basic required configurations | Microsoft Docs |
 
@@ -21,7 +22,7 @@
 | [Azure API for FHIR Documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/) | Official documentation including foundational concepts, quickstarts, tutorials, and how-to guides | Microsoft Docs |
 | [FHIR-Proxy OSS Project](https://github.com/microsoft/fhir-proxy) | Learn about the FHIR-Proxy open source software Project | GitHub Repo |
 | [FHIR-Loader OSS Project](https://github.com/microsoft/fhir-loader) | Learn about the FHIR-Loader open source software project | GitHub Repo |
-| [Microsoft Cloud for Heatlhcare OpenHack](https://microsoft.github.io/openhack-mc4h/) | A chance to gain new health data knowledge and learn about Microsoft’s health and life sciences (HLS) solutions in Azure including integration points | GitHub IO |
+| [Microsoft Cloud for Healthcare OpenHack](https://microsoft.github.io/openhack-mc4h/) | A chance to gain new health data knowledge and learn about Microsoft’s health and life sciences (HLS) solutions in Azure including integration points | GitHub IO |
 | [Microsoft Cloud for Healthcare OpenHack Challenges](https://github.com/microsoft/openhack-mc4h) | Training materials used in OpenHack live events, referenced by the OpenHack IO site | GitHub Repo |
 
 
