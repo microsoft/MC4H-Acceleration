@@ -18,8 +18,12 @@
 ## MC4H in Azure
 | Resource | Description | Type |
 |----|----|----|
+| [Azure API for FHIR Documentation](https://docs.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/) | Official documentation including foundational concepts, quickstarts, tutorials, and how-to guides | Microsoft Docs |
+| [FHIR-Proxy OSS Project](https://github.com/microsoft/fhir-proxy) | Learn about the FHIR-Proxy open source software Project | GitHub Repo |
+| [FHIR-Loader OSS Project](https://github.com/microsoft/fhir-loader) | Learn about the FHIR-Loader open source software project | GitHub Repo |
 | [Microsoft Cloud for Heatlhcare OpenHack](https://microsoft.github.io/openhack-mc4h/) | A chance to gain new health data knowledge and learn about Microsoft’s health and life sciences (HLS) solutions in Azure including integration points | GitHub IO |
-| [Microsoft Cloud for Healthcare OpenHack Challenges](https://github.com/microsoft/openhack-mc4h) | Training materials used in OpenHack live events, referenced by the OpenHack IO site | GitHub Repo
+| [Microsoft Cloud for Healthcare OpenHack Challenges](https://github.com/microsoft/openhack-mc4h) | Training materials used in OpenHack live events, referenced by the OpenHack IO site | GitHub Repo |
+
 
 ## Dynamics 365 Customer Insights
 | Resource | Description | Type |
