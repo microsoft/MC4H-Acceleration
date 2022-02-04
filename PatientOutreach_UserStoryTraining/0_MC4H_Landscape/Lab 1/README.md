@@ -29,17 +29,27 @@
 
 4. Click the **Quick view** link on the **Patient Insights** tile which includes Patient Outreach, to see more information.
 
-<div style="text-align: center;">
-<img src="PatientInsights.png" width="301" height="192">
-</div>
+<img
+    style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;"
+    src="PatientInsights.png"
+    alt="Patient Insights Quick View">
+</img>
 
 5.	**Close** the Patient insights quick view card, and click in the **Patient insights** tile to view the capability deployments.
 6.	Click the **Quick view** link on the **Patient Outreach** deployment tile to see more information.
 7.	Note the **Solution Dependencies** and **Post Deployment Configurations**, and click the **Learn more** link to review documentation. 
 
-<div style="text-align: center;">
-<img src="PatientOutreach.png" width="301" height="192">
-</div>
+<img
+    style="display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;"
+    src="PatientOutreach.png"
+    alt="Patient Outreach Quick View">
+</img>
 
 8.	**Close** the Patient outreach quick view card
 9.	Check the **Add** box on the **Patient outreach** deployment tile and click **Deploy** on the top right, and follow the deployment wizard.
