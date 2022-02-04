@@ -25,17 +25,21 @@
 
 3. Click the **Microsoft Cloud for Healthcare** tile on the Home page, or browse into the Solutions group and select **Healthcare**.
 
-![Microsoft Cloud for Healthcare Solutions](./MC4HSolutions.jpg)
+![Microsoft Cloud for Healthcare Solutions](./MC4HSolutions.png)
 
 4. Click the **Quick view** link on the **Patient Insights** tile which includes Patient Outreach, to see more information.
 
-![Patient Insights Quick View](./PatientInsights.png)
+<div style="text-align: center;">
+<img src="PatientInsights.png" width="301" height="192">
+</div>
 
 5.	**Close** the Patient insights quick view card, and click in the **Patient insights** tile to view the capability deployments.
 6.	Click the **Quick view** link on the **Patient Outreach** deployment tile to see more information.
 7.	Note the **Solution Dependencies** and **Post Deployment Configurations**, and click the **Learn more** link to review documentation. 
 
-![Patient Outreach Quick View](./PatientOutreach.png)
+<div style="text-align: center;">
+<img src="PatientOutreach.png" width="301" height="192">
+</div>
 
 8.	**Close** the Patient outreach quick view card
 9.	Check the **Add** box on the **Patient outreach** deployment tile and click **Deploy** on the top right, and follow the deployment wizard.
