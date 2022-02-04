@@ -21,8 +21,6 @@
 2.	Go to the Microsoft Cloud Solution Center: 
 > https://solutions.microsoft.com
 
-![Solution Center: Healthcare](./SolutionCenter.jpg)
-
 3. Click the **Microsoft Cloud for Healthcare** tile on the Home page, or browse into the Solutions group and select **Healthcare**.
 
 ![Microsoft Cloud for Healthcare Solutions](./MC4HSolutions.png)
@@ -33,7 +31,7 @@
     style="display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 60%;"
+            width: 75%;"
     src="PatientInsights.png"
     alt="Patient Insights Quick View">
 </img>
@@ -46,7 +44,7 @@
     style="display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 60%;"
+            width: 75%;"
     src="PatientOutreach.png"
     alt="Patient Outreach Quick View">
 </img>
