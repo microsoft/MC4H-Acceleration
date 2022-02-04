@@ -24,3 +24,9 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 | Azure FHIR PQ Connector | Advanced Segmentation | FHIR Sync Agent Integration Mgt|
 | | Customer Card for D365 | FHIR to CDM for Health Mapping |
 | | | FHIR Synced Clinical Data Mgt Center |
+
+## Reference Architecture
+Below is a high level reference architecture that shows one potential way these pieces can work together for a full stack Microsoft Cloud for Heatlhcare solution to Patient Outreach. In this training, we will tailor this to the specific user story. 
+
+![Patient Outreach Reference Architecture](./PatientOutreach_RefArchitecture.png)
+
