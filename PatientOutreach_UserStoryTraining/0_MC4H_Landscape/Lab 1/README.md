@@ -33,7 +33,7 @@
     style="display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 30%;"
+            width: 60%;"
     src="PatientInsights.png"
     alt="Patient Insights Quick View">
 </img>
@@ -46,7 +46,7 @@
     style="display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 30%;"
+            width: 60%;"
     src="PatientOutreach.png"
     alt="Patient Outreach Quick View">
 </img>
