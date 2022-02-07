@@ -3,14 +3,16 @@
 
 ## Defining the User Story
 
-> User Story: Missed Appointment Patient Outreach <br>**A description of a feature or function from a user’s perspective**.
-> **Who** (User Role), **What** (Functional Acceptance Criteria), **Why** (Goal or Desired Outcome)
+> User Story:<br>
+**A description of a feature or function from a user’s perspective**<br>
+**Who** (User Role), **What** (Functional Acceptance Criteria), **Why** (Goal or Desired Outcome)
 
 To reduce initial time to value, we recommend focusing on a single User Story that will deliver value to end users quickly. The scope of the user story should include end-to-end design and implementation of data flow through integrated systems and capabilities necessary.
 
-> **As a Patient Engagement manager…** <br><br>
-**I want an automated process to identify patients who often miss appointments, and inform them of Virtual Visit options** <br><br>
-**…so that I can improve access to care for those patients**
+> **Missed Appointment Patient Outreach:**<br>
+As a Patient Engagement manager…<br>
+I want an automated process to identify patients who often miss appointments, and inform them of Virtual Visit options<br>
+…so that I can improve access to care for those patients
 
 An ideal agile approach focuses on delivery of integrations and capabilities only as required to deliver the first prioritized single user story, allowing for effective unit testing and quicker delivery of value to the users. 
 
