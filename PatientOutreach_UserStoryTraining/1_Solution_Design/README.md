@@ -17,7 +17,7 @@ To reduce initial time to value, we recommend focusing on a single User Story th
 | …so that I can improve access to care for those patients |
 
 
-An ideal agile approach focuses on delivery of integrations and capabilities only as required to deliver the first prioritized single user story, allowing for effective unit testing and quicker delivery of value to the users. 
+An ideal agile approach focuses on delivery of integrations and capabilities only as required to deliver the first prioritized user story, allowing for effective unit testing of each component, and quicker delivery of value to the users. 
 
 ## The MVP Solution Design
 
@@ -26,10 +26,12 @@ An ideal agile approach focuses on delivery of integrations and capabilities onl
 To begin gap fit against tool sets and capabitlies, requirements (or acceptance criteria) need to be clearly laid out. Pre-defined Architecture Principals are also considered in the design
 
 > [Architecture Principles Starter Kit](./ArchitecturePrincipleStarterKit.docx) 
+<br>
 
 The below is an example of this exercise against the Microsoft Cloud for Healthcare capabilities for Patient Outreach, with the Patient Outreach reference architecture as a guide. 
 
-> Review the previous module: [Microsoft Cloud for Heatlhcare Landscape for Patient Outreach](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/0_MC4H_Landscape)
+> Review the previous training module: [Microsoft Cloud for Heatlhcare Landscape for Patient Outreach](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/0_MC4H_Landscape)
+<br>
 
 ![Technical Gap-Fit to Microsoft Cloud for Healthcare Capabilities](./Gap-Fit.png)
 

@@ -19,22 +19,26 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
 ## Training Agenda
 
 0. [Microsoft Cloud for Healthcare Landscape](./0_MC4H_Landscape/)
-    * Patient Outreach Capability & Feature Overview
-    * Reference Architectures
+    * [Patient Outreach Capability & Feature Overview](./0_MC4H_Landscape#patient-outreach-a-microsoft-cloud-for-healthcare-capability)
+    * [Reference Architectures](./PatientOutreach_UserStoryTraining/0_MC4H_Landscape#reference-architectures)
     * [Lab 1: Deploy Patient Outreach Capability](./0_MC4H_Landscape/Lab1)
 1.  [Agile Solution Design: A Patient Outreach User Story](./1_Solution_Design)
-    * Defining the User Story
-    * The MVP Solution Design
+    * [Defining the User Story](./PatientOutreach_UserStoryTraining/1_Solution_Design#defining-the-user-story)
+    * [The MVP Solution Design](./PatientOutreach_UserStoryTraining/1_Solution_Design#the-mvp-solution-design)
 2. Azure Deployment
-    * Azure FHIR Reference Architecture
-    * Lab 2: Deploy Azure FHIR Services with ARM Templates
+    * Microsoft Reference Architecture for Healthcare Data
+    * Azure API for FHIR Overview
+    * FHIR Proxy OSS Overview
+    * FHIR Loader OSS Overview
+    * Lab 2: Deploy Azure FHIR Reference Architecture with ARM Templates
 3. Dynamics 365 FHIR Integration
     * Azure FHIR Sync Agent Overview
     * Lab 3: Dataverse Pre-Setup & Config
     * Lab 4: FHIR Sync Agent Deployment
     * Lab 5: Integration Settings & Administration
 4. [Customer Insights Segmentation](./4_Customer_Insights_Config)
-    * Customer Insights & Segmentation Overview
+    * [What is Customer Insights?](./PatientOutreach_UserStoryTraining/4_Customer_Insights_Config#what-is-customer-insights)
+    * [Integration Architectures](./PatientOutreach_UserStoryTraining/4_Customer_Insights_Config#what-is-customer-insights)
     * Lab 6: Ingest FHIR Data
     * Lab 7: Ingest Dataverse Data
     * Lab 8: Map, Match & Merge
