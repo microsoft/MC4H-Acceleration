@@ -6,6 +6,7 @@
 > User Story:<br>
 **A description of a feature or function from a user’s perspective**<br>
 **Who** (User Role), **What** (Functional Acceptance Criteria), **Why** (Goal or Desired Outcome)
+<br>
 
 To reduce initial time to value, we recommend focusing on a single User Story that will deliver value to end users quickly. The scope of the user story should include end-to-end design and implementation of data flow through integrated systems and capabilities necessary.
 
