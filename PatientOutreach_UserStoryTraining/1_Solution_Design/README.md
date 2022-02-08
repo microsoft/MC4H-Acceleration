@@ -1,4 +1,4 @@
-# Agile Single Story Solution Design
+# Agile Solution Design: A Patient Outreach User Story
 > An exercise in agile implementation with the Microsoft Cloud for Healthcare. Defining and designing the solution for a single Patient Outreach User Story. 
 
 ## Defining the User Story
@@ -9,10 +9,12 @@
 
 To reduce initial time to value, we recommend focusing on a single User Story that will deliver value to end users quickly. The scope of the user story should include end-to-end design and implementation of data flow through integrated systems and capabilities necessary.
 
-> <br><p style="text-align: center;"><b>User Story: Missed Appointment Patient Outreach</b></p>
-> <p style="text-align: center;"><em>As a Patient Engagement manager…</em></p>
-> <p style="text-align: center;">I want an automated process to identify patients who often miss appointments, and inform them of Virtual Visit options</p>
-> <p style="text-align: center;"><em>…so that I can improve access to care for those patients</em></p><br>
+| | **User Story: Missed Appointment Patient Outreach** | |
+| --- | :---: | --- |
+| | As a Patient Engagement manager… | |
+| | I want an automated process to identify patients who often miss appointments, and inform them of Virtual Visit options | |
+| | …so that I can improve access to care for those patients | |
+
 
 An ideal agile approach focuses on delivery of integrations and capabilities only as required to deliver the first prioritized single user story, allowing for effective unit testing and quicker delivery of value to the users. 
 
