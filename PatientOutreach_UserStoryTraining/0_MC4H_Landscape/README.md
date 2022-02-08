@@ -1,5 +1,9 @@
 # Microsoft Cloud for Healthcare Landscape
+> After reviewing this material, get hands on experience with:<br>
+[Lab 1: Deploy Patient Outreach Capability](./Lab_1)
+
 ## Patient Outreach: A Microsoft Cloud for Healthcare Capability
+
 The **Patient Outreach** capability is delivered as an enabler for **Personalized Care** within the **Enhanced Patient Engagement** prioritized healthcare scenario.
 
 ![Microsoft Cloud for Healthcare Conceptual Architecture](./MC4H_Ecosystem_PersonalizedCare.png)
@@ -7,6 +11,7 @@ The **Patient Outreach** capability is delivered as an enabler for **Personalize
 ![Personalized Care Capabilities including Patient Outreach](./PersonalizedCare_Capabilities.png)
 
 ## Patient Outreach Feature Summary
+
 The Patient Outreach capability of the Microsoft Cloud for Healthcare is built on a set of FHIR Data Capabilities in Azure and Dynamics 365 base features, with added configurations, examples, and new Apps. 
 
 | DATA PLATFORM FEATURES | DYNAMICS 365 BASE FEATURES | MC4H ADDED FEATURES |
@@ -26,8 +31,9 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 | | | FHIR Synced Clinical Data Mgt Center |
 
 ## Reference Architectures
+
 Below is a high level reference architecture that shows one potential way these pieces can work together for a full stack Microsoft Cloud for Heatlhcare solution to Patient Outreach. In this training, we will tailor this to the specific user story. 
 
 ![Patient Outreach Reference Architecture](./PatientOutreach_RefArchitecture.png)
 
-> TO DO... ADD Microsoft Reference Architecture for Healthcare Data (Azure FHIR ref architecture)
+> **TO DO... ADD Microsoft Reference Architecture for Healthcare Data (Azure FHIR ref architecture)**
