@@ -9,11 +9,11 @@
 
 To reduce initial time to value, we recommend focusing on a single User Story that will deliver value to end users quickly. The scope of the user story should include end-to-end design and implementation of data flow through integrated systems and capabilities necessary.
 
-| | **User Story: Missed Appointment Patient Outreach** | |
-| --- | :---: | --- |
-| | As a Patient Engagement manager… | |
-| | I want an automated process to identify patients who often miss appointments, and inform them of Virtual Visit options | |
-| | …so that I can improve access to care for those patients | |
+| **User Story: Missed Appointment Patient Outreach** |
+| :---: | 
+| As a Patient Engagement manager… |
+| I want an automated process to identify patients who often miss appointments, and inform them of Virtual Visit options |
+| …so that I can improve access to care for those patients |
 
 
 An ideal agile approach focuses on delivery of integrations and capabilities only as required to deliver the first prioritized single user story, allowing for effective unit testing and quicker delivery of value to the users. 
