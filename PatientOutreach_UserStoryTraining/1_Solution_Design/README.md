@@ -8,7 +8,7 @@
 **Who** (User Role), **What** (Functional Acceptance Criteria), **Why** (Goal or Desired Outcome)
 <br>
 
-To reduce initial time to value, we recommend focusing on a single User Story that will deliver value to end users quickly. The scope of the user story should include end-to-end design and implementation of data flow through integrated systems and capabilities necessary.
+To reduce initial time to value, we recommend focusing on a single User Story that will deliver value to end users quickly. The scope and work breakdown of that user story should then include end-to-end design and implementation of complete data flow through integrated systems and capabilities necessary.
 
 | **User Story: Missed Appointment Patient Outreach** |
 | :---: | 
