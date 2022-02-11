@@ -14,17 +14,25 @@ The **Patient Outreach** capability is delivered as an enabler for **Personalize
 
 The Patient Outreach capability of the Microsoft Cloud for Healthcare is built on a set of FHIR Data Capabilities in Azure and Dynamics 365 base features, with added configurations, examples, and new Apps. 
 
-### Key Horizontal Microsoft Cloud Features
-| **Azure Services** | **Open Source (OSS) on Azure** |  **Dynamics 365 Marketing** | **Dynamics 365 Customer Insights** | **Connectors** |
-| :---: | :---: | :----: | :---: | :---: |
-| Azure API for FHIR | FHIR Server | Segmentation | Measures / KPIs | Azure FHIR for Power Query |
-| Healthcare APIs (preview) | FHIR Bulk Loader | Multi-channel campaigns (Customer Journeys) | Advanced Segmentation | FHIRBase for Power Platform (preview)|
-| | FHIR Proxy  | Campaign Automation & Tracking | Customer Card for D365 | FHIRClinical for Power Platform (preview) |
-| | FHIR Sync Agent | Event Management | | |
-| | | Lead Scoring & Management | | |
-| | | Social Engagement| | |
+### Key Data Platform Features
+| **Azure Services** | **Open Source (OSS) on Azure** | **Connectors** |
+| :---: | :---: | :---: |
+| Azure API for FHIR | FHIR Server | Azure FHIR for Power Query |
+| Healthcare APIs (preview) | FHIR Bulk Loader | FHIRBase for Power Platform (preview) |
+| | FHIR Proxy | FHIRClinical for Power Platform (preview) |
+| | FHIR Sync Agent | |
 
-### Key Cloud for Healthcare Added Features
+### Key Horizontal App Features Built Upon
+| **Dynamics 365 Marketing** | **Dynamics 365 Customer Insights** |
+| :---: | :---: | 
+| Segmentation | Measures / KPIs |
+| Multi-channel campaigns (Customer Journeys) | Advanced Segmentation |
+| Campaign Automation & Tracking | Customer Card for D365 |
+|Event Management | |
+| Lead Scoring & Management | |
+| Social Engagement| |
+
+### Key Power Platform & Dynamics 365 Extensions
 | **Base Dataverse Extensions** | **Patient Outreach App** | **Sync Admin for FHIR App** |
 | :---: | :---: | :---: |
 | Healthcare Data Model (CDM) | Healthcare-branded Outbound Marketing model app | FHIR Sync Agent Integration Mgt | 
