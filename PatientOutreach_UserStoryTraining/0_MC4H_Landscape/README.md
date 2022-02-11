@@ -1,6 +1,6 @@
 # Microsoft Cloud for Healthcare Landscape
 > After reviewing this material, get hands on experience with:<br>
-[Lab 1: Deploy Patient Outreach Capability](./Lab_1)
+[Lab M1: Deploy Patient Outreach Capability](./Lab_M1)
 
 ## Patient Outreach: A Microsoft Cloud for Healthcare Capability
 
@@ -14,21 +14,34 @@ The **Patient Outreach** capability is delivered as an enabler for **Personalize
 
 The Patient Outreach capability of the Microsoft Cloud for Healthcare is built on a set of FHIR Data Capabilities in Azure and Dynamics 365 base features, with added configurations, examples, and new Apps. 
 
-| DATA PLATFORM FEATURES | DYNAMICS 365 BASE FEATURES | MC4H ADDED FEATURES |
-| :----: | :----: | :---: |
-| **Azure Managed APIs** | **Dynamics 365 Marketing** | **Patient Outreach App** |
-| Azure API for FHIR | Segmentation | Healthcare-branded Outbound Marketing model app |
-| Healthcare APIs (preview) | Multi-channel campaigns (Customer Journeys) | Healthcare Data Model (CDM) |
-| | Campaign Automation & Tracking | Healthcare Forms & Views |
-| **Azure OSS Components** | Event Management | Patient Timeline Control |
-| FHIR Bulk Loader | Lead Scoring & Management | Care Team Visualization Control |
-| FHIR Proxy | Social Engagement| Sample Patient Segment Definitions |
-| FHIR Sync Agent | | Sample Patient Event Definitions |
-| | **Dynamics 365 Customer Insights** | |
-| **Connectors** | Measures / KPIs | **Sync Admin for FHIR App**|
-| Azure FHIR PQ Connector | Advanced Segmentation | FHIR Sync Agent Integration Mgt|
-| | Customer Card for D365 | FHIR to CDM for Health Mapping |
-| | | FHIR Synced Clinical Data Mgt Center |
+### KEY DATA PLATFORM FEATURES
+| **Azure Managed APIs** | **Azure OSS Components** | **Connectors**| 
+| :---: | :---: | :---: |
+| Azure API for FHIR | FHIR Bulk Loader | Azure FHIR PQ Connector |
+| Healthcare APIs (preview) | FHIR Proxy | |
+| | FHIR Sync Agent | |
+### KEY DYNAMICS 365 BASE FEATURES
+| **Dynamics 365 Marketing** | **Dynamics 365 Customer Insights** |
+| :----: | :---: |
+| Segmentation | Measures / KPIs |
+| Multi-channel campaigns (Customer Journeys) | Advanced Segmentation |
+| Campaign Automation & Tracking | Customer Card for D365 |
+| Event Management |  |
+| Lead Scoring & Management | |
+| Social Engagement| |
+| Sample Patient Event Definitions | |
+
+### CLOUD FOR HEALTHCARE ADDED FEATURES
+| **Patient Outreach App** | **Dynamics 365 Customer Insights** |
+| :----: | :---: |
+| Healthcare-branded Outbound Marketing model app | FHIR Sync Agent Integration Mgt |
+| Healthcare Data Model (CDM) | FHIR to CDM for Health Mapping |
+| Healthcare Forms & Views | FHIR Synced Clinical Data Mgt Center |
+| Patient Timeline Control | |
+| Care Team Visualization Control | |
+| Sample Patient Segment Definitions | |
+| Sample Patient Event Definitions | |
+
 
 ## Reference Architectures
 
