@@ -14,33 +14,25 @@ The **Patient Outreach** capability is delivered as an enabler for **Personalize
 
 The Patient Outreach capability of the Microsoft Cloud for Healthcare is built on a set of FHIR Data Capabilities in Azure and Dynamics 365 base features, with added configurations, examples, and new Apps. 
 
-### Key Data Platform Features
-| **Azure Managed APIs** | **Open Source (OSS) on Azure** | **Connectors**| 
-| :---: | :---: | :---: |
-| Azure API for FHIR | FHIR Bulk Loader | Azure FHIR for Power Query |
-| Healthcare APIs (preview) | FHIR Proxy | FHIRBase for Power Platform  (preview) |
-| | FHIR Sync Agent | FHIRClinical for Power Platform (preview)|
-### Key Dynamics 365 Base Features
-| **Dynamics 365 Marketing** | **Dynamics 365 Customer Insights** |
-| :----: | :---: |
-| Segmentation | Measures / KPIs |
-| Multi-channel campaigns (Customer Journeys) | Advanced Segmentation |
-| Campaign Automation & Tracking | Customer Card for D365 |
-| Event Management |  |
-| Lead Scoring & Management | |
-| Social Engagement| |
-| Sample Patient Event Definitions | |
+### Key Horizontal Microsoft Cloud Features
+| **Azure Managed APIs** | **Open Source (OSS) on Azure** |  **Dynamics 365 Marketing** | **Dynamics 365 Customer Insights** | 
+| :---: | :---: | :----: | :---: |
+| Azure API for FHIR | FHIR Server | Segmentation | Measures / KPIs |
+| Healthcare APIs (preview) | FHIR Bulk Loader | Multi-channel campaigns (Customer Journeys) | Advanced Segmentation |
+| | FHIR Proxy  | Campaign Automation & Tracking | Customer Card for D365 |
+| | FHIR Sync Agent | Event Management |  |
+| | | Lead Scoring & Management | |
+| | | Social Engagement| |
+| | | Sample Patient Event Definitions | |
 
 ### Key Cloud for Healthcare Added Features
-| **Patient Outreach App** | **Sync Admin for FHIR App** |
-| :----: | :---: |
-| Healthcare-branded Outbound Marketing model app | FHIR Sync Agent Integration Mgt |
-| Healthcare Data Model (CDM) | FHIR to CDM for Health Mapping |
-| Healthcare Forms & Views | FHIR Synced Clinical Data Mgt Center |
-| Patient Timeline Control | |
-| Care Team Visualization Control | |
-| Sample Patient Segment Definitions | |
-| Sample Patient Event Definitions | |
+| **Base Dataverse Extensions** | **Patient Outreach App** | **Sync Admin for FHIR App** | **Connectors** 
+| :---: | :---: | :---: | :---: |
+| Healthcare Data Model (CDM) | Healthcare-branded Outbound Marketing model app | FHIR Sync Agent Integration Mgt | Azure FHIR for Power Query |
+| Healthcare Forms & Views | Sample Patient Segment Definitions | FHIR to CDM for Health Mapping | FHIRBase for Power Platform  (preview) |
+| Patient Timeline Control | Sample Patient Event Definitions | FHIR Synced Clinical Data Mgt Center | FHIRClinical for Power Platform (preview) |
+| Care Team Visualization Control  | | | |
+
 
 
 ## Reference Architectures
