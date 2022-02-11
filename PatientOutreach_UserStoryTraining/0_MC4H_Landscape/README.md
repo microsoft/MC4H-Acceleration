@@ -14,13 +14,13 @@ The **Patient Outreach** capability is delivered as an enabler for **Personalize
 
 The Patient Outreach capability of the Microsoft Cloud for Healthcare is built on a set of FHIR Data Capabilities in Azure and Dynamics 365 base features, with added configurations, examples, and new Apps. 
 
-### KEY DATA PLATFORM FEATURES
-| **Azure Managed APIs** | **Azure OSS Components** | **Connectors**| 
+### Key Data Platform Features
+| **Azure Managed APIs** | **Open Source (OSS) on Azure** | **Connectors**| 
 | :---: | :---: | :---: |
-| Azure API for FHIR | FHIR Bulk Loader | Azure FHIR PQ Connector |
-| Healthcare APIs (preview) | FHIR Proxy | |
-| | FHIR Sync Agent | |
-### KEY DYNAMICS 365 BASE FEATURES
+| Azure API for FHIR | FHIR Bulk Loader | Azure FHIR for Power Query |
+| Healthcare APIs (preview) | FHIR Proxy | FHIRBase for Power Platform  (preview) |
+| | FHIR Sync Agent | FHIRClinical for Power Platform (preview)|
+### Key Dynamics 365 Base Features
 | **Dynamics 365 Marketing** | **Dynamics 365 Customer Insights** |
 | :----: | :---: |
 | Segmentation | Measures / KPIs |
@@ -31,7 +31,7 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 | Social Engagement| |
 | Sample Patient Event Definitions | |
 
-### CLOUD FOR HEALTHCARE ADDED FEATURES
+### Cloud for Healthcare Added Features
 | **Patient Outreach App** | **Dynamics 365 Customer Insights** |
 | :----: | :---: |
 | Healthcare-branded Outbound Marketing model app | FHIR Sync Agent Integration Mgt |
