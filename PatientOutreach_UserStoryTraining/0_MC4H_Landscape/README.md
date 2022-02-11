@@ -23,7 +23,6 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 | | FHIR Sync Agent | Event Management |  |
 | | | Lead Scoring & Management | |
 | | | Social Engagement| |
-| | | Sample Patient Event Definitions | |
 
 ### Key Cloud for Healthcare Added Features
 | **Base Dataverse Extensions** | **Patient Outreach App** | **Sync Admin for FHIR App** | **Connectors** 
