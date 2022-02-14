@@ -20,13 +20,14 @@ To reduce initial time to value, we recommend focusing on a single User Story th
 An ideal agile approach focuses on delivery of integrations and capabilities only as required to deliver the first prioritized user story, allowing for effective unit testing of each component, and quicker delivery of value to the users. 
 
 ## The MVP Solution Design
-
-### Step 1: Gap-Fit
-
-To begin gap fit against tool sets and capabitlies, requirements (or acceptance criteria) need to be clearly laid out. Pre-defined Architecture Principals are also considered in the design
+We recommend an organization define a set of Architecture Principals at the beginning of a Cloud for Healthcare implementation, as there will be many different teams and specialties involved. Forming an Architecture Review Board to develop and maintain these principals allow development teams to make design decisions independently without sacrificing standards or consistencies around important concepts. 
 
 > [Architecture Principles Starter Kit](./ArchitecturePrincipleStarterKit.docx) 
 <br>
+
+### Step 1: Gap-Fit
+
+To begin gap fit against tool sets and capabitlies, requirements (or acceptance criteria) need to be clearly laid out. Pre-defined Architecture Principals are also considered in the design.
 
 The below is an example of this exercise against the Microsoft Cloud for Healthcare capabilities for Patient Outreach, with the Patient Outreach reference architecture as a guide. 
 
@@ -48,9 +49,9 @@ Digging deeper into each Acceptance Criteria with data elements, we can define o
 
 | # | Acceptance Criteria | Minimum Data Elements | Source | Target |
 | --- | --- | --- | --- | --- |
-| 1. | Patient records and historical appointment data are consumed daily for cohort analysis | <ul><li>Patient [id, meta.lastUpdated, name, birthDate, telecom (system=email)]</li><li>Appointment [id, status, serviceType, appointmentType, start, participant (type=patient)]</li> | Azure FHIR Services | D365 Customer Insights |
+| 1. | Patient records and historical appointment data are consumed daily for cohort analysis | <ul><li>Patient [id, meta.lastUpdated, name, birthDate, telecom (system=email)]<br>[Patient Resource Reference](https://www.hl7.org/fhir/patient.html)</li><li>Appointment [id, status, serviceType, appointmentType, start, participant (type=patient)]<br>[Appointment Resource Reference](https://www.hl7.org/fhir/appointment.html)</li> | Azure FHIR Services | D365 Customer Insights |
 | 2. | User defines/adjusts patient cohort (segment) criteria based on historical patient appointment status data | See 1 | See 1 | See 1 |
-| 4. | Patient records with contact data are consumed and kept up to date from system of record for outreach/communications | Patient [identifier, name, birthDate, telecom (system=email)] | Azure FHIR Services | D365 Marketing (Dataverse) |
+| 4. | Patient records with contact data are consumed and kept up to date from system of record for outreach/communications | Patient [identifier, name, birthDate, telecom (system=email)]<br>[Patient Resource Reference](https://www.hl7.org/fhir/patient.html) | Azure FHIR Services | D365 Marketing (Dataverse) |
 | 5. | User can see patient segment definition and members in Patient Outreach app | Segments with members | D365 Customer Insights | D365 Marketing (Dataverse) |
 | 6. | User can see measures and insights identified that qualify the members for the segment | Patient [contactid, firstname, lastname, birthdate, EMailAddress1, msemr_azurefhirid] | D365 Marketing (Dataverse) | D365 Customer Insights |
 

@@ -33,12 +33,13 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 | Social Engagement| |
 
 ### Key Power Platform & Dynamics 365 Extensions
-| **Base Dataverse Extensions** | **Patient Outreach App** | **Sync Admin for FHIR App** |
+| **Base Dataverse Extensions** | **Patient Outreach App** | **Dataverse FHIR Interoperability** |
 | :---: | :---: | :---: |
-| Healthcare Data Model (CDM) | Healthcare-branded Outbound Marketing model app | FHIR Sync Agent Integration Mgt | 
-| Healthcare Forms & Views | Sample Patient Segment Definitions | FHIR to CDM for Health Mapping | 
-| Patient Timeline Control | Sample Patient Event Definitions | FHIR Synced Clinical Data Mgt Center | 
-| Care Team Visualization Control  | | |
+| Healthcare Data Model (CDM) | Healthcare-branded Outbound Marketing model app | Sync Admin for FHIR App | 
+| Healthcare Forms & Views | Sample Patient Segment Definitions | FHIR Sync Agent Integration Mgt | 
+| Patient Timeline Control | Sample Patient Event Definitions | FHIR to CDM for Health Mapping | 
+| Care Team Visualization Control  | | FHIR Synced Clinical Data Mgt Center |
+| | | Virtual Health Data Tables (preview) |
 
 
 
