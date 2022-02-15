@@ -25,7 +25,7 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
 1.  [Agile Solution Design: A Patient Outreach User Story](./1_Solution_Design)
     * Defining the User Story
     * The MVP Solution Design
-2. Azure Deployment
+2. Azure FHIR Deployments
     * Microsoft Reference Architecture for Healthcare Data
     * Azure API for FHIR Overview
     * FHIR Proxy OSS Overview
@@ -33,19 +33,19 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
     * Lab F1: Deploy Azure FHIR Reference Architecture with ARM Templates
 3. Dynamics 365 FHIR Integration
     * Azure FHIR Sync Agent Overview
-    * Lab 3: Dataverse Pre-Setup & Config
-    * Lab 4: FHIR Sync Agent Deployment
-    * Lab 5: Integration Settings & Administration
+    * Lab S1: Dataverse Pre-Setup & Config
+    * Lab S2: FHIR Sync Agent Deployment
+    * Lab S3: Integration Settings & Administration
 4. [Customer Insights Segmentation](./4_Customer_Insights_Config)
     * What is Customer Insights?
     * Integration Architectures
-    * Lab 6: Ingest FHIR Data
-    * Lab 7: Ingest Dataverse Data
-    * Lab 8: Map, Match & Merge
-    * Lab 9: Relationships & Activities
-    * Lab 10: Create Measures & Segments
+    * [Lab CI1: Ingest FHIR Data](./4_Customer_Insights_Config/Lab_CI1)
+    * [Lab CI2: Ingest Dataverse Data](./4_Customer_Insights_Config/Lab_CI2)
+    * [Lab CI3: Map, Match & Merge](./4_Customer_Insights_Config/Lab_CI3)
+    * Lab CI4: Relationships & Activities
+    * Lab CI5: Create Measures & Segments
 5. Dynamics 365 Configuration
     * Customer Insights Customer Card Overview
     * Patient Journey Overview
-    * Lab 11: Integrate Unified Profile Customer Card Add-in
-    * Lab 12: Simple Email Patient Journey
+    * Lab D1: Integrate Unified Profile Customer Card Add-in
+    * Lab D2: Simple Email Patient Journey
