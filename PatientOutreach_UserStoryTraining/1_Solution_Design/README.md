@@ -34,6 +34,12 @@ The below is an example of this exercise against the Microsoft Cloud for Healthc
 > Review the previous training module: [Microsoft Cloud for Heatlhcare Landscape for Patient Outreach](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/0_MC4H_Landscape)
 <br>
 
+Since there are other user stories on the backlog requiring additional patient data from the EMR, and the customer wants to use intelligent cohort analysis to target their patients, we choose to flow Appointment data into Customer Insights and perform the bulk of our segmentation there. 
+
+In order to allow appointments and other segment-driving metrics directly in the user experience for Marketing, we also sync Dynamics 365 patient contact information into Customer Insights to support the Customer Card feature. 
+
+
+
 ![Technical Gap-Fit to Microsoft Cloud for Healthcare Capabilities](./Gap-Fit.png)
 
 > IMPORTANT NOTE:<br>
@@ -63,8 +69,13 @@ Starting from the Microsoft Cloud for Healthcare reference architectures for Pat
 
 ![Missed Appointment Patient Outreach High Level Architecture](MissedAptPatientOutreachArchitecture.png)
 
+
+> NOTE: At this point in the process, data volume and complexity should be evaluated to determine the appropriate ingestion method into Customer Insights. Future user stories should also be considered to ensure the appropriate long-term architecture is selected. 
+<br>
+
 Starting from the Microsoft Reference Architecture for Healthcare Data, we add our Target systems of Customer Insights and D365/Dataverse and illustrate data flow.
 
 ![Missed Appointment Patient Outreach Data Flow](MissedAptPatientOutreachDataFlow.png)
 
+These resulting architecture and flow diagrams, paired with the minimum data requirements definition can be used for any architecture reviews, and to inform the EHR integration team of data required to begin mapping from the source EMR. 
 
