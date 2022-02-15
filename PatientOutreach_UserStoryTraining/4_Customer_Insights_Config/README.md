@@ -3,6 +3,8 @@
 > * [Lab CI1: Ingest FHIR Data](./Lab_CI1/)
 > * [Lab CI2: Ingest Dataverse Data](./Lab_CI2/)
 > * [Lab CI3: Map, Match & Merge](./Lab_CI3/)
+>
+> then continue to the next module: [Dynamics 365 Configuration](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/5_D365_Marketing_Config)
 <br>
 ## What is Customer Insights?
 

@@ -64,3 +64,5 @@
 10.	Return to the **Home** page of the Solution Center, and you will see your named deployment listed with deployment status (In progress). 
 
 ![In Progress Deployment](./YourDeployments.png)
+
+> You completed the lab! Continue to the next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)

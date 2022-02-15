@@ -79,3 +79,4 @@ Starting from the Microsoft Reference Architecture for Healthcare Data, we add o
 
 These resulting architecture and flow diagrams, paired with the minimum data requirements definition can be used for any architecture reviews, and to inform the EHR integration team of data required to begin mapping from the source EMR. 
 
+> Continue to the next module: [FHIR Services Deployment](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/2_Azure_Deployment)
