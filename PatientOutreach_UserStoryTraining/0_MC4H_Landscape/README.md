@@ -45,8 +45,10 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 
 ## Reference Architectures
 
-Below is a high level reference architecture that shows one potential way these pieces can work together for a full stack Microsoft Cloud for Heatlhcare solution to Patient Outreach. In this training, we will tailor this to the specific user story. 
+Below is a high level reference architecture that shows one potential way these pieces can work together for a full stack Microsoft Cloud for Heatlhcare solution to Patient Outreach. This is a good reference but should be tailored to each customer’s specific use case. For instance, data ingestion from Azure FHIR Services to D365 Customer Insights may use $export to ADLS instead depending on data volume and complexity. 
 
 ![Patient Outreach Reference Architecture](./PatientOutreach_RefArchitecture.png)
 
-> **TO DO... ADD Microsoft Reference Architecture for Healthcare Data (Azure FHIR ref architecture)**
+As we know we will need patient data to effectively target patient cohorts, we are also interested in a more detailed look at the Azure FHIR Services and Sync Agent blocks in the Patient Outreach reference architecture. 
+
+![Microsoft Reference Architecture for Heatlhcare Data](./AzureFHIRReferenceDataFlow.png)
