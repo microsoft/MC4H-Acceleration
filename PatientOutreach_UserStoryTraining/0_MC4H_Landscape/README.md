@@ -1,7 +1,7 @@
 # Microsoft Cloud for Healthcare Landscape
 > After reviewing this material, get hands on experience with:<br>
 [Lab M1: Deploy Patient Outreach Capability](./Lab_M1)<br>
-Continue to next module: [Agile Solution Design: A Patient Outreach User Story](PatientOutreach_UserStoryTraining\1_Solution_Design)
+Continue to next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)
 
 ## Patient Outreach: A Microsoft Cloud for Healthcare Capability
 
