@@ -1,5 +1,7 @@
 # Agile Solution Design: A Patient Outreach User Story
-> An exercise in agile implementation with the Microsoft Cloud for Healthcare. Defining and designing the solution for a single Patient Outreach User Story. 
+> An exercise in agile implementation with the Microsoft Cloud for Healthcare. Defining and designing the solution for a single Patient Outreach User Story. <BR><BR>
+> After reviewing this material, download an example work breakdown of this user story: **[TO DO: ADD EXCEL OF WORK ITEMS]**<br>
+Continue to the next module: [Azure FHIR Deployment](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/2_Azure_Deployment)
 
 ## Defining the User Story
 
@@ -79,4 +81,5 @@ Starting from the Microsoft Reference Architecture for Healthcare Data, we add o
 
 These resulting architecture and flow diagrams, paired with the minimum data requirements definition can be used for any architecture reviews, and to inform the EHR integration team of data required to begin mapping from the source EMR. 
 
-> Continue to the next module: [FHIR Services Deployment](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/2_Azure_Deployment)
+> Download an example work breakdown of this user story: **[TO DO: ADD EXCEL OF WORK ITEMS]**<br>
+Continue to the next module: [Azure FHIR Deployment](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/2_Azure_Deployment)

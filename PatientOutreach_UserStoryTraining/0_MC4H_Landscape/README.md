@@ -53,3 +53,6 @@ Below is a high level reference architecture that shows one potential way these 
 As we know we will need patient data to effectively target patient cohorts, we are also interested in a more detailed look at the Azure FHIR Services and Sync Agent blocks in the Patient Outreach reference architecture. 
 
 ![Microsoft Reference Architecture for Heatlhcare Data](./AzureFHIRReferenceDataFlow.png)
+
+> Complete the Lab: [Lab M1: Deploy Patient Outreach Capability](./Lab_M1)<br>
+Continue to next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)

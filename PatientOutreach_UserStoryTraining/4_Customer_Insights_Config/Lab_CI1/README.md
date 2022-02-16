@@ -4,7 +4,7 @@
 
 ## Pre-requisites
 * Customer Insights tenant subscription
-* Customer Insights environment created Start with Customer Insights
+* Customer Insights environment created [Start with Customer Insights](https://docs.microsoft.com/en-us/dynamics365/customer-insights/paid-license)
 * Admin or Contributor permissions to the Customer Insights environment
 * URL of the deployed Azure API for FHIR, accessible from the Customer Insights tenant
     * Should be of the format `https://[AzureAPIforFHIRName].azurehealthcareapis.com`

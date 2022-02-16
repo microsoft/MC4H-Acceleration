@@ -65,4 +65,5 @@
 
 ![In Progress Deployment](./YourDeployments.png)
 
-> You completed the lab! Continue to the next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)
+> You completed the lab!<br>
+Continue to the next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)
