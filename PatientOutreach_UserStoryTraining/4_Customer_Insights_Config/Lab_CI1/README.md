@@ -122,4 +122,4 @@
 2.	Clicking into each table allows you to review the Attributes being ingested, as well as the actual data. Validate that the data is coming in as expected. 
 
 > You completed the lab!<br>
-Continue to the next lab: [Ingest Dataverse Data](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI2)
+Continue to the next lab: [Ingest D365 Data into Customer Insights](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI2)
