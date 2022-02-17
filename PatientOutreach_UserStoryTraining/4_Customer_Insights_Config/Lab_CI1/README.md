@@ -69,25 +69,23 @@
     * From the Add column tab of the ribbon, click **Custom Column**.
     * Define the **lastname** column and formula as in the table below. Refer to the sample FHIR JSON object to better understand how the formula is returning the value in yellow.
     * Repeat the steps above to add the **firstname** column with the formula in the table below.
-    <br>
 
     | **Column name** | **Custom column formula** | **Sample FHIR JSON name object** |
     | --- | --- | ---| 
     | lastname | `List.First ( Table.FirstN ( [name] , each [use] = "official" ) [family] )` | ![FHIR JSON example: Patient last name](./Images/FHIRJSONLastName.png) |
     | firstname | `List.First ( List.First (Table.FirstN ( [name] , each [use] = "official" ) [given] ) )` | ![FHIR JSON example: Patient first name](./Images/FHIRJSONFirstName.png)|
-    <br>
+
 6.	The **telecom** data element can contain multiple entries for contact information including phone and email. Since we only want the email address of the patient, we will use a custom column to filter and return only the first email address:
     * From the Add column tab of the ribbon, click **Custom Column**.
-    * Define the **email** column and formula as in the table below. Refer to the sample FHIR JSON object to better understand how the formula is returning the value in yellow.
-   <br>
+    * Define the **email** column and formula as in the table below. Refer to the sample FHIR JSON object to better understand how the formula is returning the value in yellow.<br>
 
     | **Column name** | **Custom column formula** | **Sample FHIR JSON name object** |
     | --- | --- | ---| 
     | email | `List.First (Table.FirstN ( [telecom] , each [system] = "email" ) [value] )` | ![FHIR JSON example: Patient email](./Images/FHIRJSONemail.png) |
-    <br>
+
 7.	Finally, select the **name** and **telecom** table columns and click **Remove Columns**
 8.	The result is a clean table of patient data with only: **id, brithDate, firstname, lastname and email**.
-<br>
+
 > NOTE: Do not Save the changes until after transforming the Appointment data, as it will close the Power Query editor, and initiate the fetch and transform. You will not be able to edit the data source again without canceling the process first. 
 
 ## Step 3: Transform the Appointment Data with Power Query
@@ -103,14 +101,12 @@
 5.	While the **appointmentType** contains a record rather than a table, the formation is similar. Repeat **Step 4** above to expand out to **appointmentType.coding.code** and **appointmentType.coding.display** columns.
 6.	The participant column contains a table. Within the nested table, there is an **actor** column, which contains nested records of the people involved in the appointment. We will define custom columns to filter and return the patient’s name and ID from those nested records.
     * Add a **Custom Column** named **patientName**, with formula below to traverse into the **actor** records in the **participant** table and return the value of the **display** column. We will look for an entry where the **reference resource** is **Patient** and use the first we find:  
-<br>
 
     | **Sample FHIR JSON name object** | **Custom column formula** | 
     | --- | --- |
     | ![FHIR JSON example: Participant Patient Name](./Images/FHIRJSONAptPatientName.png) | `List.First ( [participant] [actor] , each Text.StartsWith ( [reference] , "patient" ) ) [display]` |
 
     * For the key id back to the patient, we can remove the FHIR resource reference out of the **reference** value of the **actor** record, leaving only the ID. Create a **Custom Column** named **patientId** with the below formula to do that. 
-<br>
 
     | **Sample FHIR JSON name object** | **Custom column formula** | 
     | --- | --- |
