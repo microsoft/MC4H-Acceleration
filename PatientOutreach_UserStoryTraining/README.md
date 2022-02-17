@@ -25,12 +25,9 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
 1.  [Agile Solution Design: A Patient Outreach User Story](./1_Solution_Design)
     * Defining the User Story
     * The MVP Solution Design
-2. Azure FHIR Deployments
-    * Microsoft Reference Architecture for Healthcare Data
-    * Azure API for FHIR Overview
-    * FHIR Proxy OSS Overview
-    * FHIR Loader OSS Overview
-    * Lab F1: Deploy Azure FHIR Reference Architecture with ARM Templates
+2. [Azure FHIR Deployments](./2_Azure_Deployment)
+    * FHIR Offerings in Azure
+    * Lab F1: Deploy FHIR Reference Architecture with ARM Templates
 3. Dynamics 365 FHIR Integration
     * Azure FHIR Sync Agent Overview
     * Lab S1: Dataverse Pre-Setup & Config
