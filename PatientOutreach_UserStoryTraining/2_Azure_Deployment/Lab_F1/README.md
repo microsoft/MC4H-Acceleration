@@ -12,13 +12,13 @@ Understand the Azure API for FHIR to FHIR-Proxy realtionship, and use and ARM te
 * FHIR-Bulk Loader (OSS) deployed and available
 * Postman set up and able to make REST API calls to Azure API for FHIR
 
-## Step 1:  
+## Instructions:  
 For this lab, you will complete a challenge published as a part of the Microsoft Cloud for Healthcare OpenHack. This deploys the FHIR components into a training environment. 
 > NOTE: For an actual implementation, the ARM template will likely be adjusted for the customer's specific needs and processes, and a deployment process (ADO pipelines, etc.) should be designed around it. 
 
 Open the following github repo in a new window, complete the instructions (only Challenge 01), and then return here. 
 [Microsoft MC4H Open Hack - Challenge 01](https://github.com/openhack-mc4h/tree/main/Challenge-01)
-<br>
+<br><br>
 
 > You completed the lab!<br>
 Continue to the next module: [Dynamics 365 FHIR Integration](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/3_D365_FHIR_Integration)

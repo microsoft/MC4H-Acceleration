@@ -27,7 +27,7 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
     * The MVP Solution Design
 2. [Azure FHIR Deployments](./2_Azure_Deployment)
     * FHIR Offerings in Azure
-    * Lab F1: Deploy FHIR Reference Architecture with ARM Templates
+    * [Lab F1: Deploy FHIR Reference Architecture with ARM Templates](./2_Azure_Deployment/Lab_F1)
 3. Dynamics 365 FHIR Integration
     * Azure FHIR Sync Agent Overview
     * Lab S1: Dataverse Pre-Setup & Config
