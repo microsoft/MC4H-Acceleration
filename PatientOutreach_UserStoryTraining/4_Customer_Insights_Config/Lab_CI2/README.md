@@ -15,7 +15,7 @@
 ## Step 1: Connect with the Dataverse Power Query Connector
 
 1.	If not already there, go to the Customer Insights application and select the correct environment in the upper right corner if necessary.<br>
-`https://home.ci.ai.dynamics.com/`
+> https://home.ci.ai.dynamics.com/
 
 ![Customer Insights: Select Environment](./Images/CIEnvironmentSelection.png)
 

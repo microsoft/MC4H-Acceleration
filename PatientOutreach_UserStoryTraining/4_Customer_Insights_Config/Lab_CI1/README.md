@@ -19,7 +19,7 @@
 > NOTE: Use of the FHIR connector was selected as one ingestion method for FHIR data into Customer Insights. This may or may not be the appropriate ingestion pattern depending on data volume and complexity of the customer scenario.
 
 1.	Go to the Customer Insights application and select the correct environment in the upper right corner if necessary.<br>
-`https://home.ci.ai.dynamics.com/`
+> https://home.ci.ai.dynamics.com/
 
 ![Customer Insights: Select Environment](./Images/CIEnvironmentSelection.png)
 
