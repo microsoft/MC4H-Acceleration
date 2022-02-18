@@ -32,23 +32,25 @@ Configure the mappings between patient records ingested from the FHIR Server and
 
 | Entities | Primary Key | Mapped Fields | Type (CDM) |
 | --- | --- | --- | --- |
-| Contact (D365/Dataverse) | contactid | contactid | ID |
-| | | emailaddress1 | Identity.Service.Email |
-| | | firstname | Person.FirstName |
-| | | lastname | Person.LastName |
-| | | msemr_azurefhirid	| ID |
 | Patient (API for FHIR) | id | birthDate | Person.BirthDate |
 | | | email | Identity.Service.Email |
 | | | firstname | Person.FirstName |
 | | | id | ID |
 | | | lastname | Person.LastName |
 | | | meta.lastUpdated | Calendar.Date |
+| Contact (D365/Dataverse) | contactid | contactid | ID |
+| | | emailaddress1 | Identity.Service.Email |
+| | | firstname | Person.FirstName |
+| | | lastname | Person.LastName |
+| | | msemr_azurefhirid	| ID |
 
 5.	Click **Save** at the top of the page.
 
 ## Step 2: Match
 1.	Move to the **Match** tab of the **Unify** data area. Note that both data sources are already added to the list. 
 2.	Click the **Edit** button and change the order if necessary to make the Azure API for FHIR data source primary, and **include all records** from only the FHIR data source. For this exercise there may be sample patient data installed in D365 which will not have matches in FHIR, which we will ignore here.
+
+> NOTE: In a production Cloud for Healthcare deployment including Azure API for FHIR and Dynamics 365 or Power Apps on Dataverse, it is important that all patient records originate in the EHR, flowing through the Azure FHIR architecture into Dataverse. This means there should not be patient records in Dataverse that don't exist in Azure API for FHIR.
 
 ![Match: Edit Entity Order and Settings](./Images/MatchEditFHIR.png)
 
