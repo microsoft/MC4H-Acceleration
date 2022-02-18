@@ -73,8 +73,8 @@ Configure the mappings between patient records ingested from the FHIR Server and
 
 ![Merge: Adjust Field Order and Rank](./Images/Merge.png)
 
-2. For the fields that are in both data, ensure that the FHIR API field is the first Rank, except Email. Adjust the rank for the Email fields to make the Dataverse email field the primary.
-3. Select the **Keys** tab and check that the correct keys for each system are identified. The **CustomerID** with source System will also be listed - this is the Unified Profile identifier.
+2. For all fields that are in both data sources except **Email**, ensure that the field from the Azure API for FHIR has a **Rank** of **1**. Adjust the **Rank** for the **Email** fields to make the Dataverse email field the primary.
+3. Select the **Keys** tab and check that the correct keys for each system are identified. The **CustomerID** with source **System** will also be listed - this is the Unified Profile identifier.
 
 ![Merge: Confirm Keys](./Images/MergeKeys.png)
 
