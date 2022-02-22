@@ -26,7 +26,7 @@
 2.	Within the Audience Insights capability (default), expand into **Data sources**, click **Add data source** and follow through the Wizard to retrieve Appointment and Patient from the Azure API for FHIR:
 
     * Leaving **Microsoft Power Query** selected, name the data source **AzureAPIforFHIR** and click **Next**.
-    * Find and select the **FHIR** connector in the list of available power query connectors (hint: use the search bar) and click **Next**.
+    * Find and select the **FHIR** connector in the list of available power query connectors (hint: use the search bar).
     * Enter the **URL** to the Azure API for FHIR of the below format, and leave the **Query** blank<br>
     `https://[AzureAPIforFHIRName].azurehealthcareapis.com`
     * Authenticate with **Organizational account**, using the account that is authorized with the FHIR Data Exporter access role on the Azure API for FHIR (see pre-requisites for more information). Click **Next** once authenticated.
