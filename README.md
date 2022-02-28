@@ -2,8 +2,12 @@
 
 > This repo will contain collections of reference material, trainings, templates, and other resources to aide in the acceleration of delivering value on the Microsoft Cloud for Healthcare and other Microsoft platforms in Healthcare
 
-* [Key Readiness Resources](./Resources.md)
-* [Deployment Training: A Patient Outreach User Story](./PatientOutreach_UserStoryTraining)
+## Assets:
+
+| Asset | Description | Target Audience |
+| --- | --- | --- |
+| [Key Readiness Resources](./Resources.md) | List of resources to provide foundational understanding or pre-requisite education of Microsoft technology utilized and built upon in the Microsoft Cloud for Healthcare | All
+| [Deployment Training: A Patient Outreach User Story](./PatientOutreach_UserStoryTraining) | Deployment training of a single Patient Outreach User Story in the Microsoft Cloud for Healthcare | IT and Implementation Teams
 
 
 ## Contributing
