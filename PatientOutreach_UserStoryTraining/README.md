@@ -16,7 +16,7 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
 * Microsoft Cloud for Healthcare In a Day
 * Azure FHIR Open Hack
 
-## Training Agenda
+## Contents
 
 0. [Microsoft Cloud for Healthcare Landscape](./0_MC4H_Landscape/)
     * Patient Outreach Capability & Feature Overview

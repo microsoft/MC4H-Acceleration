@@ -1,8 +1,10 @@
 # Customer Insights Segmentation
 > After reviewing this material, get hands on experience with:<br>
-> * [Lab CI1: Ingest FHIR Data](./Lab_CI1/)
-> * [Lab CI2: Ingest Dataverse Data](./Lab_CI2/)
-> * [Lab CI3: Map, Match & Merge](./Lab_CI3/)
+> * [Lab CI1: Ingest FHIR Data](./Lab_CI1)
+> * [Lab CI2: Ingest Dataverse Data](./Lab_CI2)
+> * [Lab CI3: Map, Match & Merge](./Lab_CI3)
+> * [Lab CI4: Define Relationships & Activities](./Lab_CI4)
+> * [Lab CI5: Define Patient Measures & Segments](./Lab_CI5)
 >
 > then continue to the next module: [Dynamics 365 Configuration](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/5_D365_Marketing_Config)<br>
 
@@ -18,7 +20,7 @@ Customer Insights is the Microsoft offering of a fully managed customer data pla
 
 > NOTE: This is the capability most referred to when discussing Customer Insights 
 
-![Audience Insights Process Steps](./AudienceInsights_Steps.png)
+![Audience Insights Process Steps](./Images/AudienceInsights_Steps.png)
 
 ### What is Engagement Insights?
 
@@ -33,16 +35,18 @@ There are many potential architecture patterns with Customer Insights, inluding 
 
 For the purposes of this exercise, the best fit architecture is the standard **Dynamics 365 Integrated Reference Architecture**. 
 
-![Dynamics 365 Integrated Reference Architecture](./D365_Integrated_RefArch.png)
+![Dynamics 365 Integrated Reference Architecture](./Images/D365_Integrated_RefArch.png)
 
 As we focus in on the components of this architecture that will be required to implement the Missed Appointment Patient Outreach use case, we can adjust this architecture to fit our needs specifically. 
 
-![Missed Appointment Patient Outreach CI Architecture](./MissedAptPatientOutreach_Arch.png)
+![Missed Appointment Patient Outreach CI Architecture](./Images/MissedAptPatientOutreach_Arch.png)
 
 > Complete the labs:
 > * [Lab CI1: Ingest FHIR Data](./Lab_CI1/)
 > * [Lab CI2: Ingest Dataverse Data](./Lab_CI2/)
 > * [Lab CI3: Map, Match & Merge](./Lab_CI3/)
+> * [Lab CI4: Define Relationships & Activities](./Lab_CI4)
+> * [Lab CI5: Define Patient Measures & Segments](./Lab_CI5)
 >
 > Continue to the next module: [Dynamics 365 Configuration](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/5_D365_Marketing_Config)<br>
 
