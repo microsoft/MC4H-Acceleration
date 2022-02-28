@@ -17,6 +17,8 @@ Continue to next module: [Dynamics 365 FHIR Integration](https://github.com/micr
 
  > NOTE: The new Healthcare APIs (in preview) is the evolved version of Azure API for FHIR and offers additional technology and services, including some capabilities available in the OSS projects above. 
 
+![Healthcare Data Reference Architecture in Azure](./AzureFHIRReferenceDataFlow.png)
+
 Click the links above to review the capabilities of the Azure API for FHIR, FHIR Proxy, and FHIR Bulk Loader, and how they work together. 
 
 > Complete the lab:

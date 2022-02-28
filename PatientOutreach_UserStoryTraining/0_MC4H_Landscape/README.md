@@ -7,9 +7,9 @@ Continue to next module: [Agile Solution Design: A Patient Outreach User Story](
 
 The **Patient Outreach** capability is delivered as an enabler for **Personalized Care** within the **Enhanced Patient Engagement** prioritized healthcare scenario.
 
-![Microsoft Cloud for Healthcare Conceptual Architecture](./MC4H_Ecosystem_PersonalizedCare.png)
+![Microsoft Cloud for Healthcare Conceptual Architecture](./Images/MC4H_Ecosystem_PersonalizedCare.png)
 
-![Personalized Care Capabilities including Patient Outreach](./PersonalizedCare_Capabilities.png)
+![Personalized Care Capabilities including Patient Outreach](./Images/PersonalizedCare_Capabilities.png)
 
 ## Patient Outreach Feature Summary
 
@@ -48,11 +48,11 @@ The Patient Outreach capability of the Microsoft Cloud for Healthcare is built o
 
 Below is a high level reference architecture that shows one potential way these pieces can work together for a full stack Microsoft Cloud for Heatlhcare solution to Patient Outreach. This is a good reference but should be tailored to each customer’s specific use case. For instance, data ingestion from Azure FHIR Services to D365 Customer Insights may use $export to ADLS instead depending on data volume and complexity. 
 
-![Patient Outreach Reference Architecture](./PatientOutreach_RefArchitecture.png)
+![Patient Outreach Reference Architecture](./Images/PatientOutreach_RefArchitecture.png)
 
 As we know we will need patient data to effectively target patient cohorts, we are also interested in a more detailed look at the Azure FHIR Services and Sync Agent blocks in the Patient Outreach reference architecture. 
 
-![Microsoft Reference Architecture for Heatlhcare Data](./AzureFHIRReferenceDataFlow.png)
+![Microsoft Reference Architecture for Heatlhcare Data](./Images/AzureFHIRReferenceDataFlow.png)
 
 > Complete the Lab: [Lab M1: Deploy Patient Outreach Capability](./Lab_M1)<br>
 Continue to next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)

@@ -42,7 +42,7 @@ In order to allow appointments and other segment-driving metrics directly in the
 
 
 
-![Technical Gap-Fit to Microsoft Cloud for Healthcare Capabilities](./Gap-Fit.png)
+![Technical Gap-Fit to Microsoft Cloud for Healthcare Capabilities](./Images/Gap-Fit.png)
 
 > IMPORTANT NOTE:<br>
 The use of the Microsoft Azure FHIR PQ Connector may or may not be the appropriate ingestion mechanism into Customer Insights depending on data volume and complexity. **TO DO: FIND REFERENCE MATERIAL TO LINK TO FOR INGESTION APPROACH CONSIDERATIONS**
@@ -69,7 +69,7 @@ Digging deeper into each Acceptance Criteria with data elements, we can define o
 
 Starting from the Microsoft Cloud for Healthcare reference architectures for Patient Outreach we make adjustments to represent our User Story actors, and make some contextual notes.
 
-![Missed Appointment Patient Outreach High Level Architecture](MissedAptPatientOutreachArchitecture.png)
+![Missed Appointment Patient Outreach High Level Architecture](./Images/MissedAptPatientOutreachArchitecture.png)
 
 
 > NOTE: At this point in the process, data volume and complexity should be evaluated to determine the appropriate ingestion method into Customer Insights. Future user stories should also be considered to ensure the appropriate long-term architecture is selected. 
@@ -77,7 +77,7 @@ Starting from the Microsoft Cloud for Healthcare reference architectures for Pat
 
 Starting from the Microsoft Reference Architecture for Healthcare Data, we add our Target systems of Customer Insights and D365/Dataverse and illustrate data flow.
 
-![Missed Appointment Patient Outreach Data Flow](MissedAptPatientOutreachDataFlow.png)
+![Missed Appointment Patient Outreach Data Flow](./Images/MissedAptPatientOutreachDataFlow.png)
 
 These resulting architecture and flow diagrams, paired with the minimum data requirements definition can be used for any architecture reviews, and to inform the EHR integration team of data required to begin mapping from the source EMR. 
 

@@ -23,7 +23,7 @@
 
 3. Click the **Microsoft Cloud for Healthcare** tile on the Home page, or browse into the Solutions group and select **Healthcare**.
 
-![Microsoft Cloud for Healthcare Solutions](./MC4HSolutions.png)
+![Microsoft Cloud for Healthcare Solutions](./Images/MC4HSolutions.png)
 
 4. Click the **Quick view** link on the **Patient Insights** tile which includes Patient Outreach, to see more information.
 
@@ -32,7 +32,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 75%;"
-    src="PatientInsights.png"
+    src="./Images/PatientInsights.png"
     alt="Patient Insights Quick View">
 </img>
 
@@ -45,7 +45,7 @@
             margin-left: auto;
             margin-right: auto;
             width: 75%;"
-    src="PatientOutreach.png"
+    src="./Images/PatientOutreach.png"
     alt="Patient Outreach Quick View">
 </img>
 
@@ -59,11 +59,11 @@
     * **Configure dependencies**: confirm that the Dynamics 365 Marketing dependency shows as installed and configured. If not, either complete the Marketing installation and re-check dependencies, or go back and select a different environment (step 9b).
     * **Deploy solution**: after clicking Deploy, the solutions will be installed unattended, and will take approximately two hours to complete. You can either stay on this page and watch progress, or close the page.
 
-![Patient Outreach Solution Deployment Wizard](./DeploySolutionWizard.png)
+![Patient Outreach Solution Deployment Wizard](./Images/DeploySolutionWizard.png)
 
 10.	Return to the **Home** page of the Solution Center, and you will see your named deployment listed with deployment status (In progress). 
 
-![In Progress Deployment](./YourDeployments.png)
+![In Progress Deployment](./Images/YourDeployments.png)
 
 > You completed the lab!<br>
 Continue to the next module: [Agile Solution Design: A Patient Outreach User Story](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/1_Solution_Design)

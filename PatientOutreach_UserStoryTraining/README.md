@@ -39,8 +39,8 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
     * [Lab CI1: Ingest FHIR Data](./4_Customer_Insights_Config/Lab_CI1)
     * [Lab CI2: Ingest Dataverse Data](./4_Customer_Insights_Config/Lab_CI2)
     * [Lab CI3: Map, Match & Merge](./4_Customer_Insights_Config/Lab_CI3)
-    * Lab CI4: Relationships & Activities
-    * Lab CI5: Create Measures & Segments
+    * [Lab CI4: Define Relationships & Activities](./4_Customer_Insights_Config/Lab_CI4)
+    * [Lab CI5: Define Patient Measures & Segments](./4_Customer_Insights_Config/Lab_CI5)
 5. Dynamics 365 Configuration
     * Customer Insights Customer Card Overview
     * Patient Journey Overview
