@@ -32,6 +32,7 @@
 ## Dynamics 365 Customer Insights
 | Resource | Description | Type |
 |----|----|----|
+| [Unlock customer intent with Dynamics 365 Customer Insights](https://docs.microsoft.com/en-us/learn/paths/build-customer-insights/) | Introductory learning path starting with creating a unified profile and then working with your customer data in Customer Insights | Microsoft Learn
 | [Partner Portal - Positioning](https://dynamicspartners.transform.microsoft.com/products/dynamics-365-customer-insights) | D365 Customer Insights overview and positioning resources for Microsoft Partners to aid in customer conversations and scoping | Partner Resources <br> *(requires partner hub login)* |
 | [Implementation Guidance](https://dynamicspartners.transform.microsoft.com/download/protected?assetname=assets/Partner_Deployment_Kit.zip&download=1&protected=1&src=https://dynamicspartners.transform.microsoft.com/products/dynamics-365-customer-insights?tab=go-to-market) | Downloadable document pack to implementation step-by-step, available to Microsoft Partners | Partner Resources <br> *(requires partner hub login)* |
 | [Customer Insights in a Day](https://aka.ms/CIADPartner) | Learn core functionality of Customer Insights through hands on configuration exercises | Partner Training Material, including instructor and student resources <br> *(requires partner hub login)* |

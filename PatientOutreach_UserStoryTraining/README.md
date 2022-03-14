@@ -13,8 +13,10 @@ Technical Architects, Developers, Consultants with hands-on knowledge working wi
 
 **Approximate Time:** 8 hours
 ## Pre-Requisite Trainings
-* Microsoft Cloud for Healthcare In a Day
-* Azure FHIR Open Hack
+* [Get started with Microsoft Cloud for Healthcare](https://docs.microsoft.com/en-us/learn/paths/healthcare-in-a-day/)
+* [Microsoft Azure Healthcare APIs Workshop](https://github.com/microsoft/azure-healthcare-apis-workshop) (optional)
+* [Unlock customer intent with Dynamics 365 Customer Insights](https://docs.microsoft.com/en-us/learn/paths/build-customer-insights/)
+* [Microsoft Dynamics 365 Fundamentals: Marketing](https://docs.microsoft.com/en-us/learn/paths/explore-microsoft-dynamics-365-marketing/)
 
 ## Contents
 | # | Module | Topics Covered | Hands-on Material |
