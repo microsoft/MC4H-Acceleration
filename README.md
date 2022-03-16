@@ -6,7 +6,7 @@
 
 | Asset | Description | Target Audience |
 | --- | --- | --- |
-| [Accelerators & Toolkits](./Tools.md) | List of known accelerators or tools that can kickstart your Healthcare Data or MC4H solution designs | IT and Implementation Teams |
+| [Accelerators & Tools](./Tools.md) | List of known accelerators or tools that can kickstart your Healthcare Data or MC4H solution designs | IT and Implementation Teams |
 | [Deployment Training: A Patient Outreach User Story](./PatientOutreach_UserStoryTraining) | Deployment training of a single Patient Outreach User Story in the Microsoft Cloud for Healthcare | IT and Implementation Teams
 | [Other Learning Resources](./LearningResources.md) | List of resources available through a variety of mediums to provide foundational understanding or pre-requisite education of Microsoft technology utilized and built upon in the Microsoft Cloud for Healthcare | All |
 
