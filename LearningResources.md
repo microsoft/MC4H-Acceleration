@@ -1,5 +1,5 @@
-# Key MC4H Readiness Resources
->Other resources to provide foundational understanding or pre-requisite education of Microsoft technology utilized and built upon in the Microsoft Cloud for Healthcare
+# MC4H and Healthcare DAta Readiness Resources
+> Resources from a variety of locations and mediums to provide foundational understanding or pre-requisite education of Microsoft technology utilized and built upon in the Microsoft Cloud for Healthcare.
 
 ## Microsoft Cloud for Healthcare
 | Resource | Description | Type |
