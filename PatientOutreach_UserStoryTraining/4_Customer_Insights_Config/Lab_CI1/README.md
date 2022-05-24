@@ -2,6 +2,12 @@
 >**Objective:**<br>
 >Configure Azure FHIR Power Query connector to ingest Patient and Appointment data into Customer Insights
 
+## Outcomes
+* Successful authentication and connection to Azure API for FHIR via the FHIR Connector
+* Patient and Appointment resources ingested into Customer Insights, ready for processing
+> **Estimated Time Commitment:**<br>
+> About 30min active time, about 20 minutes unattended processing time
+
 ## Pre-requisites
 * Customer Insights tenant subscription
 * Customer Insights environment created [Start with Customer Insights](https://docs.microsoft.com/en-us/dynamics365/customer-insights/paid-license)
@@ -9,10 +15,6 @@
 * URL of the deployed Azure API for FHIR, accessible from the Customer Insights tenant
     * Should be of the format `https://[AzureAPIforFHIRName].azurehealthcareapis.com`
 * User with FHIR Data Exporter access role assigned in Azure API for FHIR for Organizational authentication:  [FHIR Power Query authentication - Power Query | Microsoft Docs](https://docs.microsoft.com/en-us/power-query/connectors/fhir/fhir-authentication#azure-active-directory-organizational-authentication)
-
-## Outcomes
-* Successful authentication and connection to Azure API for FHIR via the FHIR Connector
-* Patient and Appointment resources ingested into Customer Insights, ready for processing
 
 ## Step 1: Connect with the FHIR Power Query Connector
 
@@ -23,14 +25,16 @@
 
 ![Customer Insights: Select Environment](./Images/CIEnvironmentSelection.png)
 
-2.	Within the Audience Insights capability (default), expand into **Data sources**, click **Add data source** and follow through the Wizard to retrieve Appointment and Patient from the Azure API for FHIR:
+2.	Ensure Audience Insights area selected, top left (default).
 
-    * Leaving **Microsoft Power Query** selected, name the data source **AzureAPIforFHIR** and click **Next**.
-    * Find and select the **FHIR** connector in the list of available power query connectors (hint: use the search bar).
-    * Enter the **URL** to the Azure API for FHIR of the below format, and leave the **Query** blank<br>
+3. Expand into **Data sources**, click **Add data source** and complete the wizard to ingest Patients and Appointments:
+
+    * Leave **Microsoft Power Query** selected, name the data source **AzureAPIforFHIR** and click **Next**.
+    * Select **FHIR** connector (hint: use the search bar), click **Next**.
+    * Enter the Azure API for FHIR **URL** in below format, leaving **Query** blank<br>
     `https://[AzureAPIforFHIRName].azurehealthcareapis.com`
-    * Authenticate with **Organizational account**, using the account that is authorized with the FHIR Data Exporter access role on the Azure API for FHIR (see pre-requisites for more information). Click **Next** once authenticated.
-    * Once the list of available tables in the FHIR Server load, check the **Appointment** and **Patient** tables, and click **Transform data**.
+    * Authenticate with **Organizational account**, see pre-requisites for account requirements. Click **Next** once authenticated.
+    * In list of available tables (may take time to load), check **Appointment** and **Patient**, and click **Transform data**.
 
 ![Configure New Data Source](./Images/NewDataSource.png)
 
@@ -51,10 +55,10 @@
 ![Patient Table: Choose Columns](./Images/PatientsTransformChooseColumns.png)
 
 3.	Note that the **meta**, **name** and **telecom** columns contain nested records and tables due to the FHIR data structure. 
-4.	We can use expand for the **meta** column, as it contains a single record in each row:
+4.	Use expand for the **meta** column, as it contains a single record in each row:
     * Click the **Expand** button on the **meta** column header.
     * Select only the **lastUpdated** column of the nested record.
-    * Click **OK** to replace the meta column containing a record with a **meta.lastUpdated** column containing a timestamp for the FHIR resource.
+    * Click **OK** to replace the meta column with **meta.lastUpdated**.
 
 <img
     style="display: block;
@@ -65,61 +69,65 @@
     alt="Patient Table: Expand Meta.LastUpdated">
 </img>
 
-5.	Since **name** contains a nested table and we only want to return data from one record, we will use custom columns to filter and return only the first (given) and last (family) names from the first record found tagged as **official**:
-    * From the Add column tab of the ribbon, click **Custom Column**.
-    * Define the **lastname** column and formula as in the table below. Refer to the sample FHIR JSON object to better understand how the formula is returning the value in yellow.
-    * Repeat the steps above to add the **firstname** column with the formula in the table below.
+5.	Use custom columns to retrieve first (given) and last (family) names from **name**, which contains a nested table. We only want data from the first record where **use** is **official**:
+    * In the **Add column** ribbon tab, click **Custom Column**.
+    * Define **lastname** with formula below. 
+    * Repeat steps above to add **firstname** with formula below.
+    > Refer to the sample FHIR JSON object below to better understand how the formula returns the value in yellow.
 
     | **Column name** | **Custom column formula** | **Sample FHIR JSON name object** |
     | --- | --- | ---| 
     | lastname | `List.First ( Table.FirstN ( [name] , each [use] = "official" ) [family] )` | ![FHIR JSON example: Patient last name](./Images/FHIRJSONLastName.png) |
     | firstname | `List.First ( List.First (Table.FirstN ( [name] , each [use] = "official" ) [given] ) )` | ![FHIR JSON example: Patient first name](./Images/FHIRJSONFirstName.png)|
 
-6.	The **telecom** data element can contain multiple entries for contact information including phone and email. Since we only want the email address of the patient, we will use a custom column to filter and return only the first email address:
-    * From the Add column tab of the ribbon, click **Custom Column**.
-    * Define the **email** column and formula as in the table below. Refer to the sample FHIR JSON object to better understand how the formula is returning the value in yellow.<br>
+6.	The **telecom** data element can contain multiple entries for contact information including phone and email. Use a custom column to return only the first email address of the patient:
+    * In the **Add column** ribbon tab, click **Custom Column**.
+    * Define **email** with formula below. 
+    > Refer to the sample FHIR JSON object below to better understand how the formula returns the value in yellow.
 
     | **Column name** | **Custom column formula** | **Sample FHIR JSON name object** |
     | --- | --- | ---| 
     | email | `List.First (Table.FirstN ( [telecom] , each [system] = "email" ) [value] )` | ![FHIR JSON example: Patient email](./Images/FHIRJSONemail.png) |
 
 7.	Finally, select the **name** and **telecom** table columns and click **Remove Columns**
-8.	The result is a clean table of patient data with only: **id, brithDate, firstname, lastname and email**.
+8.	The result is a flattened table including only: **id, brithDate, firstname, lastname and email**.
 
-> NOTE: Do not Save the changes until after transforming the Appointment data, as it will close the Power Query editor, and initiate the fetch and transform. You will not be able to edit the data source again without canceling the process first. 
+> NOTE: Do not save changes yet, as you will continue with appointment transfromations in the next step. If you saved accidentally, cancel the refresh and edit the data source again to continue.
 
 ## Step 3: Transform the Appointment Data with Power Query
 
 1.	Select the **Appointment** table in the **Queries** pane.
 2.	Use **Choose Columns** to remove all columns except **id, status, serviceType, appointmentType, start, participant**.
 3.	Note that the **serviceType**, **appointmentType**, and **participant** columns contain nested records and tables due to the FHIR data structure. 
-4.	Since we just want to return values from **serviceType** with no filtering required, we can use the expand feature. However, note that the nested JSON structure of this node will require two expansion steps to return the values:
+4.	Use expand for the **serviceType** column, as no filtering of nested data is required. Two expansion steps will be required:
     * Click the **Expand** button on the **serviceType** column header.
-    * Select only the **coding** column and click **OK** to replace the serviceType column with a new **serviceType.coding** column containing a table.
-    * Click the **Expand** button on the **serviceType.coding** table.
-    * Select the **code** and **display** columns to replace the serviceType.coding column with two new **serviceType.coding.code** and **serviceType.coding.display** columns.
-5.	While the **appointmentType** contains a record rather than a table, the formation is similar. Repeat **Step 4** above to expand out to **appointmentType.coding.code** and **appointmentType.coding.display** columns.
-6.	The participant column contains a table. Within the nested table, there is an **actor** column, which contains nested records of the people involved in the appointment. We will define custom columns to filter and return the patient’s name and ID from those nested records.
-    * Add a **Custom Column** named **patientName**, with formula below to traverse into the **actor** records in the **participant** table and return the value of the **display** column. We will look for an entry where the **reference resource** is **Patient** and use the first we find:  
+    * Select only **coding** and click **OK** to replace the serviceType column with a new **serviceType.coding** column containing a table.
+    * Click the **Expand** button on the **serviceType.coding** column header.
+    * Select both **code** and **display** to replace the serviceType.coding column with two new **serviceType.coding.code** and **serviceType.coding.display** columns.
+5.	Repeat **Step 4** above to expand **appointmentType** out to **appointmentType.coding.code** and **appointmentType.coding.display** columns. While the appointmentType contains a record rather than a table, the formation is similar. 
+6.	Use custom columns to parse the **participant** column, containing a nested table of different types of participants. We only want data from the first record where the **actor** is **Patient**.
+    * Add a **Custom Column** named **patientName** with below formula, to select the first **actor** record where **reference** begins with **Patient**, returning the **display** value:
 
     | **Sample FHIR JSON name object** | **Custom column formula** | 
     | --- | --- |
     | ![FHIR JSON example: Participant Patient Name](./Images/FHIRJSONAptPatientName.png) | `List.First ( [participant] [actor] , each Text.StartsWith ( [reference] , "patient" ) ) [display]` |
 
-    * For the key id back to the patient, we can remove the FHIR resource reference out of the **reference** value of the **actor** record, leaving only the ID. Create a **Custom Column** named **patientId** with the below formula to do that. 
+    * Add a **Custom Column** named **patientId** with below formula, to select the first **actor** record where **reference** begins with **Patient**, parsing the id out of the **reference** value. 
 
     | **Sample FHIR JSON name object** | **Custom column formula** | 
     | --- | --- |
     | ![FHIR JSON example: Participant Patient ID](./Images/FHIRJSONAptPatientID.png) | `Text.Replace ( List.First ( [participant] [actor] , each Text.StartsWith ( [reference] , "patient" ) ) [reference] , "Patient/" , "" )` |
 
-    * Finally, select the participant table column and click Remove Columns.
-7.	The result is a clean Appointment table with **id, status, serviceType.coding.code, serviceType.coding.display, appointmentType.coding.code, appointmentType.coding.display, start, patientName** and **patientId**.
-8.	Click **Save** to complete the data source definition and initiate the first retrieve for both Patients and Appointments. The data source will be listed with status **Refreshing**.
+    * Finally, select the original **participant** column and click **Remove Columns**.
+7.	The result is a flattened Appointment table with **id, status, serviceType.coding.code, serviceType.coding.display, appointmentType.coding.code, appointmentType.coding.display, start, patientName** and **patientId**.
+8.	Click **Next**, leave as **Manual Update**,  and **Save**. 
+9. Let validation complete, and the new datasource will be listed with status **Refreshing**.
 
 ## Step 4: View Ingested Tables
 
-1.	Once the initial data source refresh job completes, it will show with a **Successful** Status in the **Data Sources** area. Navigate into the **Entities** area to find two new tables: **Appointment** and **Patient**. 
-2.	Clicking into each table allows you to review the Attributes being ingested, as well as the actual data. Validate that the data is coming in as expected. 
+1.	Once the initial refresh job completes (about 20 minutes), the data source will show **Successful** in the **Data Sources** area. 
+2. Navigate into **Entities** to find two new tables: **Appointment** and **Patient**. 
+3.	Click into each table to review the Attributes being ingested, and to validate that the data is coming in as expected. 
 
 > You completed the lab!<br>
 Continue to the next lab: [Ingest D365 Data into Customer Insights](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI2)

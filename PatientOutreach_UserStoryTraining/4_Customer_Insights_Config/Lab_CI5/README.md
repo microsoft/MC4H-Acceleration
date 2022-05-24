@@ -2,19 +2,19 @@
 >**Objective:**<br>
 Configure key measures based on historical appointment data, and segments based on those measures for use within Dynamics 365 Marketing.
 
+## Outcomes
+* Published Missed Appointment Measures
+* Missed Appointment patient segments configured and exported to Dynamics 365 Marketing
+> **Estimated Time Commitment:**<br>
+> About 20min
+
 ## Pre-requisites
 * Customer Insights tenant subscription
 * Admin or Contributor permissions to the Customer Insights environment
 * Access and permissions to the D365 environment
 * Customer Insights labs [CI1](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI1),  [CI2](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI2), [CI3](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI3), and [CI4](https://github.com/microsoft/MC4H-Acceleration/tree/main/PatientOutreach_UserStoryTraining/4_Customer_Insights_Config/Lab_CI4) completed
 
-
-## Outcomes
-* Published Missed Appointment Measures
-* Missed Appointment patient segments configured and exported to Dynamics 365 Marketing
-
-
-## Step 1: Conigure Measures
+## Step 1: Configure Measures
 
 1.	If not already there, go to the Customer Insights application and select the correct environment in the upper right corner if necessary.<br>
 > https://home.ci.ai.dynamics.com/
@@ -39,20 +39,30 @@ Configure key measures based on historical appointment data, and segments based 
 
 6. Click **Run** to save the measure and run the calculation.
 
-7. Repeat the previous steps to create more measures, as listed in the table below. Use the **Filter** option of the measure to add filters on the Appointment.status field.
+| Measure | Formula | Filter | Rules |
+| --- | --- | --- | --- |
+| NoShow Appointments | `Count Unique [FHIR data source]_Appointment.id` | `Appointment.status is equal to noshow` (ignore case) | none |
+| Cancelled Appointments | `Count Unique [FHIR data source]_Appointment.id` | `Appointment.status is equal to cancelled` (ignore case) | none |
+| % No Show Appointments | `Average ( Customer_Measure.NoShowAppointments / Customer_Measure.TotalAppointments ) * 100` | none | **Replace null with 0** for used reference measures |
+| % Missed Appointments | `Max  ( ( Customer_Measure.NoShowAppointments + Customer_Measure.CancelledAppointments ) / Customer_Measure.TotalAppointments ) * 100`| none | **Replace null with 0** for used reference measures |
+
+7. Repeat the previous steps, using Filter and Rule feature steps below as needed to create more measures, as listed in the table above. 
+    > NOTE:<br>
+    > For measures that use other measures in their logic, you will need to wait for them to refresh successfully before they will be available in the attribute pane. 
+
+8. Use the **Filter** button above the calculation to add filters on the Appointment.status field.
 
 ![New Measure: Add Filter](./Images/MeasureAddFilter.png)
 
-| Measure | Formula | Filter |
-| --- | --- | --- |
-| NoShow Appointments | `Count Unique [FHIR data source]_Appointment.id` | `Appointment.status is equal to noshow` (ignore case) |
-| Cancelled Appointments | `Count Unique [FHIR data source]_Appointment.id` | `Appointment.status is equal to cancelled` (ignore case) |
-| % No Show Appointments | `Average ( Customer_Measure.NoShowAppointments / Customer_Measure.TotalAppointments ) * 100` | none |
-| % Missed Appointments | `Max  ( ( Customer_Measure.NoShowAppointments + Customer_Measure.CancelledAppointments ) / Customer_Measure.TotalAppointments ) * 100`| none |
+9. Use the **Rules** button below the calculation to replace troublesome values (such as nulls that would cause an error in a % calculation)
 
-> EXTRA CHALLENGE: Use the Measure Templates to create a **Days since last appointment** measure.
+![New Measure: Add Rules](./Images/MeasureAddRules.png)
+
+> EXTRA CHALLENGE:<br>
+> Use the Measure Templates to create a **Days since last appointment** measure.
 
 ## Step 2: Configure Segments
+
 > NOTE: Measure refreshes from the last step will need to be completed and successful before they can be referenced in Segment configurations.
 
 1. Go the the **Segments** area and select **New segment**.
@@ -64,7 +74,7 @@ Configure key measures based on historical appointment data, and segments based 
 3. Complete the rule condition to be:<br>
 `Customer_Measure : CustomerInsights.NoShow Appointments is greater than 50`
 
-4. Click the **Edit details** link at the top of the page to give the segment a name and description of **No Show over 50 percent** or similar.
+4. Click the **Edit details** link at the top of the page to name the segment **No Show over 50 percent** or similar.
 
 ![New Segment: Edit details](./Images/SegmentEditDetails.png)
 
@@ -74,6 +84,8 @@ Configure key measures based on historical appointment data, and segments based 
 `Customer_Measure : CustomerInsights.Cancelled Appointments is greater than 50`
 
 ## Step 3: Configure Segment Export to Dynamics 365 Marketing
+
+> NOTE: Segment refreshes from the last step will need to be completed and successful before they can be used in Export configurations.
 
 1. Expand into the **Admin > Connections** area, scroll down under Export connections to find **Dynamics 365 Marketing (Outbound)**, and click **Set up**.
 
@@ -87,7 +99,7 @@ Configure key measures based on historical appointment data, and segments based 
 
 ![Set up Dynamics 365 Marketing (Outbound) connection](./Images/ConnectionsConfigureD365Marketing.png)
 
-4. Using the connection just configured, configure the export to match on **contactid** within Dynamics and select both segments to be exported with each refresh, and select **Save**.
+4. Using the new connection, configure the export to match on **contactid** within Dynamics and select both segments to be exported with each refresh, and select **Save**.
 
 ![Set up Dynamics 365 Marketing (Outbound) export](./Images/ConnectionsConfigureExport.png)
 
