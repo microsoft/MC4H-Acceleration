@@ -63,6 +63,21 @@ This use case utilizes the Customer Insights Contact Card to visualize Unified P
 
 ![Transform Contact Table: Convert contactid to lowercase](./Images/TransformLowercaseGUID.png)
 
+### Advanced Editor Query
+
+For those who are advanced users of Power Query and are comfortable working with the Advanced Editor to build the query rather than using the UI to build the transformation steps, the resulting query of the steps in this section are below.
+
+```
+let
+    Source = CommonDataService.Database("[your_EnvironmentDomain]"),
+    Navigation = Source{[Schema = "dbo", Item = "contact"]}[Data],
+    #"Choose columns" = Table.SelectColumns(Navigation, {"contactid", "firstname", "lastname", "emailaddress1", "msemr_contacttype", "msemr_azurefhirid"}),
+    #"Filtered rows" = Table.SelectRows(#"Choose columns", each [msemr_contacttype] = 935000000),
+    #"Lowercased text" = Table.TransformColumns(#"Filtered rows", {{"contactid", each Text.Lower(_), type text}})
+in
+  #"Lowercased text"
+```
+
 ## Step 3: Validate Ingested Tables
 
 1.	Once the initial refresh job completes (about 20 minutes), the data source will show **Successful** in the **Data Sources** area. 
