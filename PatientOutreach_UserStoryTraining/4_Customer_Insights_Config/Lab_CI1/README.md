@@ -94,6 +94,25 @@
 
 > NOTE: Do not save changes yet, as you will continue with appointment transfromations in the next step. If you saved accidentally, cancel the refresh and edit the data source again to continue.
 
+### Advanced Editor Query
+
+For those who are advanced users of Power Query and are comfortable working with the Advanced Editor to build the query rather than using the UI to build the transformation steps, the resulting query of the steps in this section are below.
+
+```
+let
+    Source = Fhir.Contents("[your_AzureAPIforFHIR_URL]", null),
+    #"Navigation 1" = Source{[Name = "Patient"]}[Data],
+    #"Choose columns" = Table.SelectColumns(#"Navigation 1", {"id", "meta", "name", "telecom", "birthDate"}),
+    #"Expanded meta" = Table.ExpandRecordColumn(#"Expanded address", "meta", {"lastUpdated"}, {"meta.lastUpdated"}),
+    #"Added custom" = Table.AddColumn(#"Expanded meta", "lastname", each List.First(Table.FirstN([name], each [use] = "official")[family])),
+    #"Added custom 1" = Table.AddColumn(#"Added custom", "firstname", each List.First(List.First(Table.FirstN([name], each [use] = "official")[given]))),
+    #"Added custom 2" = Table.AddColumn(#"Added custom 1", "email", each List.First(Table.FirstN([telecom], each [system] = "email")[value])),
+    #"Removed columns" = Table.RemoveColumns(#"Added custom 2", {"name", "telecom"})
+in
+  #"Removed columns"
+```
+
+
 ## Step 3: Transform the Appointment Data with Power Query
 
 1.	Select the **Appointment** table in the **Queries** pane.
@@ -122,6 +141,26 @@
 7.	The result is a flattened Appointment table with **id, status, serviceType.coding.code, serviceType.coding.display, appointmentType.coding.code, appointmentType.coding.display, start, patientName** and **patientId**.
 8.	Click **Next**, leave as **Manual Update**,  and **Save**. 
 9. Let validation complete, and the new datasource will be listed with status **Refreshing**.
+
+### Advanced Editor Query
+
+For those who are advanced users of Power Query and are comfortable working with the Advanced Editor to build the query rather than using the UI to build the transformation steps, the resulting query of the steps in this section are below.
+
+```
+let
+    Source = Fhir.Contents("[your_AzureAPIforFHIR_URL]", null),
+    #"Navigation 1" = Source{[Name = "Appointment"]}[Data],
+    #"Choose columns" = Table.SelectColumns(#"Navigation 1", {"id", "status", "serviceType", "appointmentType", "start", "participant"}),
+    #"Expanded serviceType" = Table.ExpandTableColumn(#"Choose columns", "serviceType", {"coding"}, {"serviceType.coding"}),
+    #"Expanded serviceType.coding" = Table.ExpandTableColumn(#"Expanded serviceType", "serviceType.coding", {"code", "display"}, {"serviceType.coding.code", "serviceType.coding.display"}),
+    #"Expanded appointmentType" = Table.ExpandRecordColumn(#"Expanded serviceType.coding", "appointmentType", {"coding"}, {"appointmentType.coding"}),
+    #"Expanded appointmentType.coding" = Table.ExpandTableColumn(#"Expanded appointmentType", "appointmentType.coding", {"code", "display"}, {"appointmentType.coding.code", "appointmentType.coding.display"}),
+    #"Added custom" = Table.AddColumn(#"Expanded appointmentType.coding", "patient.name", each List.First([participant][actor], each Text.StartsWith([reference],"patient"))[display]),
+    #"Added custom 1" = Table.AddColumn(#"Added custom", "patient.id", each Text.Replace(List.First([participant][actor], each Text.StartsWith([reference],"patient"))[reference],"Patient/", "")),
+    #"Removed columns" = Table.RemoveColumns(#"Added custom 1", {"participant"})
+in
+  #"Removed columns"
+```
 
 ## Step 4: View Ingested Tables
 
