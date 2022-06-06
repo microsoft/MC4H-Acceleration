@@ -78,7 +78,7 @@
     | **Column name** | **Custom column formula** | **Sample FHIR JSON name object** |
     | --- | --- | ---| 
     | lastname | `List.First ( Table.FirstN ( [name] , each [use] = "official" ) [family] )` | ![FHIR JSON example: Patient last name](./Images/FHIRJSONLastName.png) |
-    | firstname | `List.First ( List.First (Table.FirstN ( [name] , each [use] = "official" ) [given] ) )` | ![FHIR JSON example: Patient first name](./Images/FHIRJSONFirstName.png)|
+    | firstname | `List.First ( List.First ( Table.FirstN ( [name] , each [use] = "official" ) [given] ) )` | ![FHIR JSON example: Patient first name](./Images/FHIRJSONFirstName.png)|
 
 6.	The **telecom** data element can contain multiple entries for contact information including phone and email. Use a custom column to return only the first email address of the patient:
     * In the **Add column** ribbon tab, click **Custom Column**.
@@ -87,7 +87,7 @@
 
     | **Column name** | **Custom column formula** | **Sample FHIR JSON name object** |
     | --- | --- | ---| 
-    | email | `List.First (Table.FirstN ( [telecom] , each [system] = "email" ) [value] )` | ![FHIR JSON example: Patient email](./Images/FHIRJSONemail.png) |
+    | email | `List.First ( Table.Column ( Table.SelectRows ( [telecom] , each [system] = "email" ) , "value" ) )` | ![FHIR JSON example: Patient email](./Images/FHIRJSONemail.png) |
 
 7.	Finally, select the **name** and **telecom** table columns and click **Remove Columns**
 8.	The result is a flattened table including only: **id, brithDate, firstname, lastname and email**.
@@ -106,7 +106,7 @@ let
     #"Expanded meta" = Table.ExpandRecordColumn(#"Expanded address", "meta", {"lastUpdated"}, {"meta.lastUpdated"}),
     #"Added custom" = Table.AddColumn(#"Expanded meta", "lastname", each List.First(Table.FirstN([name], each [use] = "official")[family])),
     #"Added custom 1" = Table.AddColumn(#"Added custom", "firstname", each List.First(List.First(Table.FirstN([name], each [use] = "official")[given]))),
-    #"Added custom 2" = Table.AddColumn(#"Added custom 1", "email", each List.First(Table.FirstN([telecom], each [system] = "email")[value])),
+    #"Added custom 2" = Table.AddColumn(#"Added custom 1", "email", each List.First(Table.Column(Table.SelectRows([telecom], each [system] = "email"),"value"))),
     #"Removed columns" = Table.RemoveColumns(#"Added custom 2", {"name", "telecom"})
 in
   #"Removed columns"
