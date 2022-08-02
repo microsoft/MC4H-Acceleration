@@ -1,5 +1,5 @@
 
-# Deleting from Azure API for FHIR
+# Deleting resources from Azure API for FHIR
 
 After a data migration testing cycle, when data entry errors have been identified or any other process generates inconsistent or plainly "bad" data, a clean up of the FHIR repository will be required. This page describes some of the possibilities available to a data steward when performing that cleanup.  
 
