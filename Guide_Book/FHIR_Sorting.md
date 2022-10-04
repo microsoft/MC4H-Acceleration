@@ -1,9 +1,12 @@
 # Sorting FHIR resources
 Sorting query results can be done on the client or on the server. If you want the server to sort for you, here are some examples:
 
-HTTP Request: `GET {{fhirURL}}/Patient?_sort=status`
+TODO: Simple sort example
 
-HTTP Request: `GET {{fhirURL}}/Observation?_sort=status,-date,category`
+# Limitations
+Only certain fields support sorting.
+
+The Azure API for FHIR does not currently support sorting by multiple fields.
 
 ## Additional Reading
 
