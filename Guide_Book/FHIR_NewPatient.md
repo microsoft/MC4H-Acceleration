@@ -13,40 +13,20 @@ Request Body:
 `{
     "resourceType": "Patient", 
     "identifier": [
-        {
-            "system": "myEMR", 
-            "value": "1234567890"
-        }
+        { "system": "myEMR", "value": "1234567890" }
     ], 
     "active": true, 
     "name": [
-        {
-            "use": "usual", 
-            "family": "Smith", 
-            "given": [
-                "Jane"
-            ]
-        }
+        { "use": "usual", "family": "Smith", "given": [ "Jane" ] }
     ], 
     "telecom": [
-        {
-            "use": "mobile", 
-            "value": "+15551234567"
-        }
+        { "use": "mobile", "value": "+15551234567" }
     ], 
     "gender": "female", 
     "birthDate": "1974-08-12", 
     "deceasedBoolean": false, 
     "address": [
-        {
-            "use": "home", 
-            "line": [
-                "1234 River Way"
-            ], 
-            "city": "Nowhere", 
-            "state": "OH", 
-            "postalCode": "12345"
-        }
+        { "use": "home", "line": [ "1234 River Way" ], "city": "Nowhere", "state": "OH", "postalCode": "12345" }
     ]
 }`
 
@@ -59,40 +39,20 @@ Request Body:
     "resourceType": "Patient", 
     "id": "{{uniquePatientId}}"
     "identifier": [
-        {
-            "system": "myEMR", 
-            "value": "1234567890"
-        }
+        { "system": "myEMR", "value": "1234567890" }
     ], 
     "active": true, 
     "name": [
-        {
-            "use": "usual", 
-            "family": "Smith", 
-            "given": [
-                "Jane"
-            ]
-        }
+        { "use": "usual", "family": "Smith", "given": [ "Jane" ] }
     ], 
     "telecom": [
-        {
-            "use": "mobile", 
-            "value": "+15551234567"
-        }
+        { "use": "mobile", "value": "+15551234567" }
     ], 
     "gender": "female", 
     "birthDate": "1974-08-12", 
     "deceasedBoolean": false, 
     "address": [
-        {
-            "use": "home", 
-            "line": [
-                "1234 River Way"
-            ], 
-            "city": "Nowhere", 
-            "state": "OH", 
-            "postalCode": "12345"
-        }
+        { "use": "home", "line": [ "1234 River Way" ], "city": "Nowhere", "state": "OH", "postalCode": "12345" }
     ]
 }`
 
