@@ -9,6 +9,7 @@ PUT uses the unique id you provide.
 Let’s say you want to create a basic Patient in FHIR, you might use:
 
 HTTP Request: `POST {{fhirURL}}\Patient`
+
 Request Body:
 `{
     "resourceType": "Patient", 
@@ -34,6 +35,7 @@ Since the above request is a POST, FHIR will generate a unique ID for the patien
 
 Alternatively, you might use PUT to prevent FHIR from assigning a unique ID and provide your own unique ID instead. In case it's not obvious, this option means you are taking on the responsibility of ensuring uniqueness of the patient's ID.
 HTTP Request: `PUT {{fhirURL}}\Patient\{{uniquePatientId}}`
+
 Request Body:
 `{
     "resourceType": "Patient", 
