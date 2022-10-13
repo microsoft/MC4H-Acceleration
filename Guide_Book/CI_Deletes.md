@@ -30,16 +30,16 @@ The schema of each delete file should be the same as that of the upsert files (f
 
 The easiest way to ensure proper formatting is to copy or move the original CSV files containing the processed data from its source _Upserts_ folders into _Deletes_ folders for dates that have not yet been processed. The timestamps of the files must also be after the last refresh date. 
 
-> IMPORTANT:<BR>
-> For optimal performance, Customer Insights recommends the size of a partition be 1 GB or less and the number of partition files in a folder must not exceed 1000. <br><br>
-> When deleting large sets of data, ensure the size of each _Deletes_ folder is less than 1GB, and the number of CSV files in a folder does not exceed 1000.
-
 For instance, if there was an issue with a recent data sync, or you need to re-run a test, which requires you delete all data in an _Encounter_ entity loaded into the container yesterday:
 
 1. Create a new datetime hierarchy folder for today if it doesn't yet exist, and create _Upserts_ and _Deletes_ directories inside
 2. Browse into the _/Encounter/IncrementalData/[datetime hierarchy for yesterday]/Upserts_ directory
 3. Copy or Move all CSV files into the _Deletes_ directory for today, ensuring the timestamps of these files are after the last refresh time of the data source in Customer Insights
 4. Refresh the data source in Customer Insights
+
+> IMPORTANT:<BR>
+> For optimal performance, Customer Insights recommends the size of a partition be 1 GB or less and the number of partition files in a folder must not exceed 1000. <br><br>
+> When deleting large sets of data, ensure the size of each _Deletes_ folder is less than 1GB, and the number of CSV files in a folder does not exceed 1000.
 
 
 ## Delete Everything & Re-Initialize the Data Source
