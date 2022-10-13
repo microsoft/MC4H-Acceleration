@@ -14,17 +14,20 @@ If all data needs to be cleared from the FHIR Service, consider deleting and re-
 If all records in a specific resource need to be deleted, then queries must first be made to capture the number of that resource type currently exists in FHIR. These counts are used to establish the correct number to delete next. If the number of entities is greater than 100, we’ll have to use paging as FHIR will only allow us to delete 100 entities at a time. 
 
 ### Get Resource Count
-Send the following HTTP request to establish the number of Encounters currently in the system. 
+Using the Encounter resource type as an example, send the following HTTP request to establish the number of Encounters currently in the system. 
 
 `GET: {fhirURL}/Encounter?_summary=count`
 
 ### hardDELETE with Count
 
-If the number of encounters returned exeeds 100, the DELETE operations require use of paging if the number of entities to be deleted exceeds 100. This means you can only do 100 at a time, but you should be able to run the same HTTP request repeatedly until you get through all of the entities. 
+If the number of encounters returned exeeds 100, the DELETE operations require use of paging if the number of entities to be deleted exceeds 100. This means you can only do 100 at a time, but you should be able to run the same HTTP request repeatedly until you get through all of the records. 
 
-The following example uses an arbitrary filter for the date entities were last updated, but this could be any date you feel would encapsulate every entity, and assumes 1000 encounters were returned from the GET request. 
+`DELETE: {fhirURL}/Encounter?hardDelete=true&_lastUpdated=gt2001-01-01&_count={100}`
 
-`/URL: {fhirURL}/Encounter?hardDelete=true&_lastUpdated=gt2001-01-01&_count={1000}`
+The above example uses an arbitrary filter for the date entities were last updated, but this could be any date that you feel would encapsulate every encounter. Run this call as many times as necessary to delete all Encounters. When there is less than 100 records, the count to delete will need to be exact. 
+
+> Note:<br>
+> If using Postman to interact with the FHIR Service API, calls can be run multiple times by using collection runner or Newman.
 
 ## Deleting Specific Resources
 
