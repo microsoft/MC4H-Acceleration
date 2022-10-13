@@ -1,12 +1,13 @@
 
-# Healthcare Success Acceleration
+# Snippets of Guidance for Microsoft Cloud for Healthcare Implementations
 
-## Message Runbook
+## Contents
 
-### Assets
-
-| Asset | Description | Target Audience |
-| --- | --- | --- |
-| [Deleting resources from Azure API for FHIR](./Deleting_Azure_API_FHIR.md) | Resources for implementing data cleanup tasks in the FHIR data repository. | IT and Implementation Teams |
-| [Deleting records in Dataverse](./Deleting_Records_Dataverse.md) | Resources for data clean up in Dataverse  | IT and Implementation Teams |
-| [Other Learning Resources](./LearningResources.md) | List of resources available through a variety of mediums to provide foundational understanding or pre-requisite education of Microsoft technology utilized and built upon in the Microsoft Cloud for Healthcare | All |
+* Working with the FHIR API
+    * [Sorting Query Results](./FHIR_Sorting.md)
+    * [Adding New Patients via API](./FHIR_NewPatient.md)
+    * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
+* Testing & Data Management
+    * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
+    * [Deleting Data out of Dataverse](./Dataverse_Deletes.md)
+    * [Deleting Data out of Customer Insights](./CI_Deletes.md)
