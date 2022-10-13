@@ -5,20 +5,20 @@ After a data migration testing cycle, when data entry errors have been identifie
 
 Applicable to both Azure Health Data Services (AHDS) and Azure API for FHIR.
 
-# Reprovision the FHIR Service
+## Reprovision the FHIR Service
 
 If all data needs to be cleared from the FHIR Service, consider deleting and re-provisioning the Azure Resource (either the FHIR Service resource within the AHDS workspace, or the Azure API for FHIR resource). This will be quicker, cleaner, and more cost effective than executing a series of delete API calls. 
 
-# Deleting in Bulk by Resource Type
+## Deleting in Bulk by Resource Type
 
 If all records in a specific resource need to be deleted, then queries must first be made to capture the number of that resource type currently exists in FHIR. These counts are used to establish the correct number to delete next. If the number of entities is greater than 100, we’ll have to use paging as FHIR will only allow us to delete 100 entities at a time. 
 
-## Get Resource Count
+### Get Resource Count
 Send the following HTTP request to establish the number of Encounters currently in the system. 
 
 `GET: {fhirURL}/Encounter?_summary=count`
 
-## hardDELETE with Count
+### hardDELETE with Count
 
 If the number of encounters returned exeeds 100, the DELETE operations require use of paging if the number of entities to be deleted exceeds 100. This means you can only do 100 at a time, but you should be able to run the same HTTP request repeatedly until you get through all of the entities. 
 
@@ -26,13 +26,13 @@ The following example uses an arbitrary filter for the date entities were last u
 
 `/URL: {fhirURL}/Encounter?hardDelete=true&_lastUpdated=gt2001-01-01&_count={1000}`
 
-# Deleting Specific Resources
+## Deleting Specific Resources
 
 When a more granular approach is necessary, because only some data needs to be deleted, the following examples can be helpful in developing your approach to delete data via API calls into the FHIR Service. 
 
 > In best practice, verify that the data you are trying to remove exists before attempting to delete it, so that you can confirm your calls did exactly what you expect. 
 
-## Search or Retrieve Calls
+### Search or Retrieve Calls
 
 Below are some example queries for various to retrieve specific records, used both to confirm their existence prior to a delete, and to confirm they were deleted after.
 
@@ -43,7 +43,7 @@ Below are some example queries for various to retrieve specific records, used bo
 `GET {fhirURL}/Patient/{patientId}/_history` | FHIR maintains a history of changes to a resource. This request returns the history – or changes over time – for a resource (such as Patient). |
 `GET {fhirURL}/Coverage?beneficiary={patientId}` | This request searches for resources (such as Coverage) based on the id of an associated resource (such as Benficiary/Patient). This request will return zero, one, or many results. |
 
-## DELETE Calls
+### DELETE Calls
 
 Following are some specific examples for deleting _patient_ records:
 
