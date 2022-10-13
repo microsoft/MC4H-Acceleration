@@ -22,11 +22,11 @@ Each time time this data source is refreshed in Customer Insights, all directori
 When specific data sets need to be deleted out of a Customer Insights data source processed from an ADLS container, if the data source in Customer Insights is configured for [incremental refreshes](https://learn.microsoft.com/en-us/dynamics365/customer-insights/incremental-refresh-data-sources), data that should be removed from Customer Insights should be placed in the _Deletes_ folder in the ADLS container. 
 
 The schema of each delete file should be the same as that of the upsert files (files that are processed as incremental data). All attributes in the files should have non-null and non-empty values. If necessary, default values can be used listed by data type below:
-•	String: "-" 
-•	Integer: 0 
-•	Float: 0.0 
-•	DateTime: 1/1/1970 12:00:00 AM +00:00 
-•	Boolean: false
+* String: "-" 
+* Integer: 0 
+* Float: 0.0 
+* DateTime: 1/1/1970 12:00:00 AM +00:00 
+* Boolean: false
 
 The easiest way to ensure proper formatting is to copy or move the original CSV files containing the processed data from its source _Upserts_ folders into _Deletes_ folders for dates that have not yet been processed. The timestamps of the files must also be after the last refresh date. 
 
