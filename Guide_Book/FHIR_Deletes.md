@@ -27,7 +27,7 @@ If the number of encounters returned exeeds 100, the DELETE operations require u
 The above example uses an arbitrary filter for the date entities were last updated, but this could be any date that you feel would encapsulate every encounter. Run this call as many times as necessary to delete all Encounters. When there is less than 100 records, the count to delete will need to be exact. 
 
 > Note:<br>
-> If using Postman to interact with the FHIR Service API, calls can be run multiple times by using collection runner or Newman.
+> If using Postman to interact with the FHIR Service API, calls can be run multiple times by using collection runner. A sample collection of the above calls can be downloaded here: [DeleteEncounters.postman_collection.json](./Samples/DeleteEncounters.postman_collection.json)
 
 ## Deleting Specific Resources
 
