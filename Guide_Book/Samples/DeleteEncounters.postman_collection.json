@@ -1,0 +1,240 @@
+{
+	"info": {
+		"_postman_id": "abbc9528-ecdd-4a4e-a97a-89527d9c6ccd",
+		"name": "DeleteEncounters",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17203842"
+	},
+	"item": [
+		{
+			"name": "AuthorizeGetToken",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var jsonData = JSON.parse(responseBody);\r",
+							"postman.setEnvironmentVariable(\"bearerToken\", jsonData.access_token);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IkN0VHVoTUptRDVNN0RMZHpEMnYyeDNRS1NSWSIsImtpZCI6IkN0VHVoTUptRDVNN0RMZHpEMnYyeDNRS1NSWSJ9.eyJhdWQiOiJodHRwczovL3BhYzJmaGlyLmF6dXJlaGVhbHRoY2FyZWFwaXMuY29tIiwiaXNzIjoiaHR0cHM6Ly9zdHMud2luZG93cy5uZXQvNmE3MTQ1NzktYWIyYS00ZDk4LTliMzktOTNhMjFlZjRlYmYyLyIsImlhdCI6MTU4ODc4NjU2MywibmJmIjoxNTg4Nzg2NTYzLCJleHAiOjE1ODg3OTA0NjMsImFjciI6IjEiLCJhaW8iOiI0MmRnWUtoaVpsUTcrS250VUtYUUttWE93THJEb2JOVXVSTFAxYjFlT0xVcmRwcEw2VllBIiwiYW1yIjpbInB3ZCJdLCJhcHBpZCI6IjcxZjU1ZDI3LWU5NzUtNDc4Mi05YWE3LTMyMGNlZWIwNDJhZiIsImFwcGlkYWNyIjoiMSIsImZhbWlseV9uYW1lIjoiQ29ubmVjdG9yIiwiZ2l2ZW5fbmFtZSI6IlB3ckFwcCIsImlwYWRkciI6IjI0LjEyNi4xNzUuMTk4IiwibmFtZSI6IlB3ckFwcCBDb25uZWN0b3IiLCJvaWQiOiI3NzA3MTJmMS0wNDA2LTQ5MmUtYTNhNC0yYmY5OTAyYWQxMGIiLCJzY3AiOiJ1c2VyX2ltcGVyc29uYXRpb24iLCJzdWIiOiJDMkhIUlBYNkllYUo1Z0twOEZNTEFNTkVrT2k3bUtRZWdyOGdYeldnaHBrIiwidGlkIjoiNmE3MTQ1NzktYWIyYS00ZDk4LTliMzktOTNhMjFlZjRlYmYyIiwidW5pcXVlX25hbWUiOiJQd3JBcHBDb25uZWN0b3JAZGVuZXh0Lm9ubWljcm9zb2Z0LmNvbSIsInVwbiI6IlB3ckFwcENvbm5lY3RvckBkZW5leHQub25taWNyb3NvZnQuY29tIiwidXRpIjoiZWo2WlF5aGY4a0t6Uk5fbFRrUnNBQSIsInZlciI6IjEuMCJ9.X_qZuyv5Pmtjgc83WkR14ks140bwIPoYOTE9JF5MFx5TG8FINByq019WfXTRyKGiMo91heJkQgOQJ46Wo9Mo4OFg_Cr_RgoP4eENuZlGa8lBUckJiZ4BY0APjfVRO7icgbSYir-5UI_--3pabudDcW0BD2eS6GBCG4efKyZScTyshMhrhTXPv0RB8aKo20SCXtVnGrK6oa_LGjwq6Dwrx_LmrMrqTw60MUHCqKs0RooIc9QaLNrvqC9O1AdptrdX8zJU-PauKzCaUCdkQLI2HYtHVSqo7yQp1AU-LHuRKwISYgOw2x1G7DIAcATF9O0mUV3Vq_-VvbwNJQsiDyiCzQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "{{clientId}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{clientSecret}}",
+							"type": "text"
+						},
+						{
+							"key": "resource",
+							"value": "{{resource}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://login.microsoftonline.com/{{tenantId}}/oauth2/token",
+					"protocol": "https",
+					"host": [
+						"login",
+						"microsoftonline",
+						"com"
+					],
+					"path": [
+						"{{tenantId}}",
+						"oauth2",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Count all Encounters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{bearerToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MS-AZUREFHIR-AUDIT-USERID",
+						"value": "Dale",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{fhirurl}}/Encounter?_lastUpdated=gt2001-01-01&_summary=count",
+					"host": [
+						"{{fhirurl}}"
+					],
+					"path": [
+						"Encounter"
+					],
+					"query": [
+						{
+							"key": "_lastUpdated",
+							"value": "gt2001-01-01"
+						},
+						{
+							"key": "_summary",
+							"value": "count"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Bulk Delete Encounters",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{bearerToken}}",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "X-MS-AZUREFHIR-AUDIT-USERID",
+						"value": "Dale",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{fhirurl}}/Encounter?hardDelete=true&_lastUpdated=gt2001-01-01&_count=100",
+					"host": [
+						"{{fhirurl}}"
+					],
+					"path": [
+						"Encounter"
+					],
+					"query": [
+						{
+							"key": "hardDelete",
+							"value": "true"
+						},
+						{
+							"key": "_lastUpdated",
+							"value": "gt2001-01-01"
+						},
+						{
+							"key": "_count",
+							"value": "100"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{bearerToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
