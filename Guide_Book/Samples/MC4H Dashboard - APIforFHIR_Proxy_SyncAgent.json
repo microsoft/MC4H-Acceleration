@@ -1,0 +1,2116 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "# FHIR Proxy\r\n",
+                    "title": "",
+                    "subtitle": "",
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "1": {
+            "position": {
+              "x": 4,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "content": "# Azure FHIR API",
+                    "title": "",
+                    "subtitle": "",
+                    "markdownUri": null
+                  }
+                }
+              }
+            }
+          },
+          "2": {
+            "position": {
+              "x": 8,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "content": "# FHIR Sync Agent",
+                  "title": "",
+                  "subtitle": "",
+                  "markdownSource": 1,
+                  "markdownUri": {}
+                }
+              }
+            }
+          },
+          "3": {
+            "position": {
+              "x": 12,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "content": "# FHIR Sync Agent SB\n",
+                  "title": "",
+                  "subtitle": "",
+                  "markdownSource": 1,
+                  "markdownUri": ""
+                }
+              }
+            }
+          },
+          "4": {
+            "position": {
+              "x": 16,
+              "y": 0,
+              "colSpan": 4,
+              "rowSpan": 1
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/MarkdownPart",
+              "settings": {
+                "content": {
+                  "content": "# SB fhirupdates Queue\n",
+                  "title": "",
+                  "subtitle": "",
+                  "markdownSource": 1,
+                  "markdownUri": ""
+                }
+              },
+              "partHeader": {
+                "title": "fhirupdates Queue",
+                "subtitle": ""
+              }
+            }
+          },
+          "5": {
+            "position": {
+              "x": 0,
+              "y": 1,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/count",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#0078D4"
+                          }
+                        }
+                      ],
+                      "title": "Server requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "performance"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "performance"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/count",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#0078D4"
+                          }
+                        }
+                      ],
+                      "title": "Server requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3,
+                        "disablePinning": true
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "performance"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "performance"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "6": {
+            "position": {
+              "x": 4,
+              "y": 1,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceTypeMode",
+                  "isOptional": true
+                },
+                {
+                  "name": "ComponentId",
+                  "isOptional": true
+                },
+                {
+                  "name": "Scope",
+                  "value": {
+                    "resourceIds": [
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.HealthcareApis/services/[AZUREAPIFORFHIR_NAME]"
+                    ]
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "PartId",
+                  "value": "10032e49-6eb5-4ab2-9d10-614cdea6e2f6",
+                  "isOptional": true
+                },
+                {
+                  "name": "Version",
+                  "value": "2.0",
+                  "isOptional": true
+                },
+                {
+                  "name": "TimeRange",
+                  "value": "P1D",
+                  "isOptional": true
+                },
+                {
+                  "name": "DashboardId",
+                  "isOptional": true
+                },
+                {
+                  "name": "DraftRequestParameters",
+                  "value": {
+                    "scope": "hierarchy"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "Query",
+                  "value": "MicrosoftHealthcareApisAuditLogs \n| summarize count() by ResultType\n",
+                  "isOptional": true
+                },
+                {
+                  "name": "ControlType",
+                  "value": "FrameControlChart",
+                  "isOptional": true
+                },
+                {
+                  "name": "SpecificChart",
+                  "value": "Pie",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartTitle",
+                  "value": "Analytics",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartSubTitle",
+                  "value": "[AZUREAPIFORFHIR_NAME]",
+                  "isOptional": true
+                },
+                {
+                  "name": "Dimensions",
+                  "value": {
+                    "xAxis": {
+                      "name": "ResultType",
+                      "type": "string"
+                    },
+                    "yAxis": [
+                      {
+                        "name": "count_",
+                        "type": "long"
+                      }
+                    ],
+                    "splitBy": [],
+                    "aggregation": "Sum"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "LegendOptions",
+                  "value": {
+                    "isEnabled": true,
+                    "position": "Bottom"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "IsQueryContainTimeRange",
+                  "value": false,
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+              "settings": {}
+            }
+          },
+          "7": {
+            "position": {
+              "x": 8,
+              "y": 1,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/count",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#0078D4"
+                          }
+                        }
+                      ],
+                      "title": "Server requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "performance"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "performance"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/count",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Server requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#0078D4"
+                          }
+                        }
+                      ],
+                      "title": "Server requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3,
+                        "disablePinning": true
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "performance"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "performance"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "8": {
+            "position": {
+              "x": 12,
+              "y": 1,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "IncomingRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Incoming Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "SuccessfulRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Successful Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ServerErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Server Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "UserErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "User Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ThrottledRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Throttled Requests.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 3600000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "IncomingRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Incoming Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "SuccessfulRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Successful Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "9": {
+            "position": {
+              "x": 16,
+              "y": 1,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "IncomingMessages",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Incoming Messages",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "OutgoingMessages",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Outgoing Messages",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Messages",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 3600000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "IncomingMessages",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Incoming Messages",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "OutgoingMessages",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Outgoing Messages",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Messages - fhirupdates",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "utc",
+                    "granularity": "auto",
+                    "absolute": {
+                      "fromDate": "2022-10-10T11:15:45.992Z",
+                      "toDate": "2022-10-16T21:46:09.168Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "10": {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Failed requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#EC008C"
+                          }
+                        }
+                      ],
+                      "title": "Failed requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "failures"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "failures"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Failed requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#EC008C"
+                          }
+                        }
+                      ],
+                      "title": "Failed requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3,
+                        "disablePinning": true
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "failures"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "failures"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "11": {
+            "position": {
+              "x": 4,
+              "y": 4,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceTypeMode",
+                  "isOptional": true
+                },
+                {
+                  "name": "ComponentId",
+                  "isOptional": true
+                },
+                {
+                  "name": "Scope",
+                  "value": {
+                    "resourceIds": [
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.HealthcareApis/services/[AZUREAPIFORFHIR_NAME]"
+                    ]
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "PartId",
+                  "value": "1418f9fa-6687-4877-8b01-feb8ff7b9966",
+                  "isOptional": true
+                },
+                {
+                  "name": "Version",
+                  "value": "2.0",
+                  "isOptional": true
+                },
+                {
+                  "name": "TimeRange",
+                  "value": "P1D",
+                  "isOptional": true
+                },
+                {
+                  "name": "DashboardId",
+                  "isOptional": true
+                },
+                {
+                  "name": "DraftRequestParameters",
+                  "value": {
+                    "scope": "hierarchy"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "Query",
+                  "value": "MicrosoftHealthcareApisAuditLogs \n| where ResultType == \"Failed\" \n| summarize Requests = count() by bin(TimeGenerated, 1h)\n",
+                  "isOptional": true
+                },
+                {
+                  "name": "ControlType",
+                  "value": "FrameControlChart",
+                  "isOptional": true
+                },
+                {
+                  "name": "SpecificChart",
+                  "value": "StackedColumn",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartTitle",
+                  "value": "Analytics",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartSubTitle",
+                  "value": "[AZUREAPIFORFHIR_NAME]",
+                  "isOptional": true
+                },
+                {
+                  "name": "Dimensions",
+                  "value": {
+                    "xAxis": {
+                      "name": "TimeGenerated",
+                      "type": "datetime"
+                    },
+                    "yAxis": [
+                      {
+                        "name": "Requests",
+                        "type": "long"
+                      }
+                    ],
+                    "splitBy": [],
+                    "aggregation": "Sum"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "LegendOptions",
+                  "value": {
+                    "isEnabled": true,
+                    "position": "Bottom"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "IsQueryContainTimeRange",
+                  "value": false,
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+              "settings": {},
+              "partHeader": {
+                "title": "Failed Requests",
+                "subtitle": ""
+              }
+            }
+          },
+          "12": {
+            "position": {
+              "x": 8,
+              "y": 4,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Failed requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#EC008C"
+                          }
+                        }
+                      ],
+                      "title": "Failed requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "failures"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "failures"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                          },
+                          "name": "requests/failed",
+                          "aggregationType": 7,
+                          "namespace": "microsoft.insights/components",
+                          "metricVisualization": {
+                            "displayName": "Failed requests",
+                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "color": "#EC008C"
+                          }
+                        }
+                      ],
+                      "title": "Failed requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 3,
+                        "disablePinning": true
+                      },
+                      "openBladeOnClick": {
+                        "openBlade": true,
+                        "destinationBlade": {
+                          "bladeName": "ResourceMenuBlade",
+                          "parameters": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "menuid": "failures"
+                          },
+                          "extensionName": "HubsExtension",
+                          "options": {
+                            "parameters": {
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "menuid": "failures"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "13": {
+            "position": {
+              "x": 12,
+              "y": 4,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ServerErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Server Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "UserErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "User Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Errors",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 2592000000
+                        },
+                        "showUTCTime": true,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ServerErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Server Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "UserErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "User Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Errors",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "14": {
+            "position": {
+              "x": 16,
+              "y": 4,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "IncomingRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Incoming Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "SuccessfulRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Successful Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ServerErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Server Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "UserErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "User Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ThrottledRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Throttled Requests.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": null,
+                      "titleKind": 0,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "filterCollection": {
+                        "filters": [
+                          {
+                            "key": "EntityName",
+                            "operator": 0,
+                            "values": [
+                              "fhirupdates"
+                            ]
+                          }
+                        ]
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 3600000
+                        },
+                        "showUTCTime": false,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ServerErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Server Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "UserErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "User Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Errors - fhirupdates",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "EntityName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "fhirupdates"
+                    ]
+                  }
+                },
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "utc",
+                    "granularity": "auto",
+                    "absolute": {
+                      "fromDate": "2022-10-10T11:15:45.992Z",
+                      "toDate": "2022-10-16T21:46:09.168Z"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "15": {
+            "position": {
+              "x": 0,
+              "y": 7,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceTypeMode",
+                  "isOptional": true
+                },
+                {
+                  "name": "ComponentId",
+                  "isOptional": true
+                },
+                {
+                  "name": "Scope",
+                  "value": {
+                    "resourceIds": [
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                    ]
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "PartId",
+                  "value": "0a1f233a-6f32-48b1-912e-2a6eec15c276",
+                  "isOptional": true
+                },
+                {
+                  "name": "Version",
+                  "value": "2.0",
+                  "isOptional": true
+                },
+                {
+                  "name": "TimeRange",
+                  "value": "P1D",
+                  "isOptional": true
+                },
+                {
+                  "name": "DashboardId",
+                  "isOptional": true
+                },
+                {
+                  "name": "DraftRequestParameters",
+                  "isOptional": true
+                },
+                {
+                  "name": "Query",
+                  "value": "union isfuzzy=true\n    availabilityResults,\n    requests,\n    exceptions,\n    pageViews,\n    traces,\n    customEvents,\n    dependencies\n| order by timestamp desc\n| take 100\n| summarize Logs = count() by itemType  \n\n",
+                  "isOptional": true
+                },
+                {
+                  "name": "ControlType",
+                  "value": "FrameControlChart",
+                  "isOptional": true
+                },
+                {
+                  "name": "SpecificChart",
+                  "value": "Pie",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartTitle",
+                  "value": "Analytics",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartSubTitle",
+                  "value": "[FHIRPROXYAPP_NAME]",
+                  "isOptional": true
+                },
+                {
+                  "name": "Dimensions",
+                  "value": {
+                    "xAxis": {
+                      "name": "itemType",
+                      "type": "string"
+                    },
+                    "yAxis": [
+                      {
+                        "name": "Logs",
+                        "type": "long"
+                      }
+                    ],
+                    "splitBy": [],
+                    "aggregation": "Sum"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "LegendOptions",
+                  "value": {
+                    "isEnabled": true,
+                    "position": "Bottom"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "IsQueryContainTimeRange",
+                  "value": false,
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+              "settings": {},
+              "partHeader": {
+                "title": "FHIR Proxy Logs",
+                "subtitle": ""
+              }
+            }
+          },
+          "16": {
+            "position": {
+              "x": 4,
+              "y": 7,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceTypeMode",
+                  "isOptional": true
+                },
+                {
+                  "name": "ComponentId",
+                  "isOptional": true
+                },
+                {
+                  "name": "Scope",
+                  "value": {
+                    "resourceIds": [
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.HealthcareApis/services/[AZUREAPIFORFHIR_NAME]"
+                    ]
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "PartId",
+                  "value": "6ad3290b-7c96-48ac-8136-32a8cc663930",
+                  "isOptional": true
+                },
+                {
+                  "name": "Version",
+                  "value": "2.0",
+                  "isOptional": true
+                },
+                {
+                  "name": "TimeRange",
+                  "value": "P1D",
+                  "isOptional": true
+                },
+                {
+                  "name": "DashboardId",
+                  "isOptional": true
+                },
+                {
+                  "name": "DraftRequestParameters",
+                  "value": {
+                    "scope": "hierarchy"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "Query",
+                  "value": "MicrosoftHealthcareApisAuditLogs \n| summarize count() by FhirResourceType\n",
+                  "isOptional": true
+                },
+                {
+                  "name": "ControlType",
+                  "value": "FrameControlChart",
+                  "isOptional": true
+                },
+                {
+                  "name": "SpecificChart",
+                  "value": "Pie",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartTitle",
+                  "value": "Analytics",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartSubTitle",
+                  "value": "[AZUREAPIFORFHIR_NAME]",
+                  "isOptional": true
+                },
+                {
+                  "name": "Dimensions",
+                  "value": {
+                    "xAxis": {
+                      "name": "FhirResourceType",
+                      "type": "string"
+                    },
+                    "yAxis": [
+                      {
+                        "name": "count_",
+                        "type": "long"
+                      }
+                    ],
+                    "splitBy": [],
+                    "aggregation": "Sum"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "LegendOptions",
+                  "value": {
+                    "isEnabled": true,
+                    "position": "Bottom"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "IsQueryContainTimeRange",
+                  "value": false,
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+              "settings": {},
+              "partHeader": {
+                "title": "FHIR Logs",
+                "subtitle": ""
+              }
+            }
+          },
+          "17": {
+            "position": {
+              "x": 8,
+              "y": 7,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceTypeMode",
+                  "isOptional": true
+                },
+                {
+                  "name": "ComponentId",
+                  "isOptional": true
+                },
+                {
+                  "name": "Scope",
+                  "value": {
+                    "resourceIds": [
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                    ]
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "PartId",
+                  "value": "11e29f0e-6193-497d-bf11-afd1c6e103dc",
+                  "isOptional": true
+                },
+                {
+                  "name": "Version",
+                  "value": "2.0",
+                  "isOptional": true
+                },
+                {
+                  "name": "TimeRange",
+                  "value": "P1D",
+                  "isOptional": true
+                },
+                {
+                  "name": "DashboardId",
+                  "isOptional": true
+                },
+                {
+                  "name": "DraftRequestParameters",
+                  "isOptional": true
+                },
+                {
+                  "name": "Query",
+                  "value": "union isfuzzy=true\n    availabilityResults,\n    requests,\n    exceptions,\n    pageViews,\n    traces,\n    customEvents,\n    dependencies\n| order by timestamp desc\n| take 100\n| summarize Logs = count() by itemType, message\n\n",
+                  "isOptional": true
+                },
+                {
+                  "name": "ControlType",
+                  "value": "FrameControlChart",
+                  "isOptional": true
+                },
+                {
+                  "name": "SpecificChart",
+                  "value": "Pie",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartTitle",
+                  "value": "Analytics",
+                  "isOptional": true
+                },
+                {
+                  "name": "PartSubTitle",
+                  "value": "[FHIRPROXYAPP_NAME]",
+                  "isOptional": true
+                },
+                {
+                  "name": "Dimensions",
+                  "value": {
+                    "xAxis": {
+                      "name": "itemType",
+                      "type": "string"
+                    },
+                    "yAxis": [
+                      {
+                        "name": "Logs",
+                        "type": "long"
+                      }
+                    ],
+                    "splitBy": [],
+                    "aggregation": "Sum"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "LegendOptions",
+                  "value": {
+                    "isEnabled": true,
+                    "position": "Bottom"
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "IsQueryContainTimeRange",
+                  "value": false,
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/Microsoft_OperationsManagementSuite_Workspace/PartType/LogsDashboardPart",
+              "settings": {},
+              "partHeader": {
+                "title": "Sync Agent Logs",
+                "subtitle": ""
+              }
+            }
+          },
+          "18": {
+            "position": {
+              "x": 12,
+              "y": 7,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ServerErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Server Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "UserErrors",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "User Errors.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ThrottledRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Throttled Requests.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Requests - All",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 2592000000
+                        },
+                        "showUTCTime": true,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "ThrottledRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Throttled Requests.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Throttled Requests",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "19": {
+            "position": {
+              "x": 16,
+              "y": 7,
+              "colSpan": 4,
+              "rowSpan": 3
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "value": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "IncomingRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Incoming Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        },
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "SuccessfulRequests",
+                          "aggregationType": 1,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Successful Requests",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": null,
+                      "titleKind": 0,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        }
+                      },
+                      "filterCollection": {
+                        "filters": [
+                          {
+                            "key": "EntityName",
+                            "operator": 0,
+                            "values": [
+                              "fhirupdates"
+                            ]
+                          }
+                        ]
+                      },
+                      "timespan": {
+                        "relative": {
+                          "duration": 2592000000
+                        },
+                        "showUTCTime": true,
+                        "grain": 1
+                      }
+                    }
+                  },
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [
+                        {
+                          "resourceMetadata": {
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/Microsoft.ServiceBus/namespaces/[SERVICEBUSNAMESPACE_NAME]"
+                          },
+                          "name": "DeadletteredMessages",
+                          "aggregationType": 3,
+                          "namespace": "microsoft.servicebus/namespaces",
+                          "metricVisualization": {
+                            "displayName": "Count of dead-lettered messages in a Queue/Topic.",
+                            "resourceDisplayName": "[SERVICEBUSNAMESPACE_NAME]"
+                          }
+                        }
+                      ],
+                      "title": "Deadletter Messages - fhirupdates",
+                      "titleKind": 2,
+                      "visualization": {
+                        "chartType": 2,
+                        "legendVisualization": {
+                          "isVisible": true,
+                          "position": 2,
+                          "hideSubtitle": false
+                        },
+                        "axisVisualization": {
+                          "x": {
+                            "isVisible": true,
+                            "axisType": 2
+                          },
+                          "y": {
+                            "isVisible": true,
+                            "axisType": 1
+                          }
+                        },
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              },
+              "filters": {
+                "EntityName": {
+                  "model": {
+                    "operator": "equals",
+                    "values": [
+                      "fhirupdates"
+                    ]
+                  }
+                },
+                "MsPortalFx_TimeRange": {
+                  "model": {
+                    "format": "utc",
+                    "granularity": "auto",
+                    "absolute": {
+                      "fromDate": "2022-10-10T11:15:45.992Z",
+                      "toDate": "2022-10-16T21:46:09.168Z"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "relative": "24h"
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "Past 24 hours"
+              },
+              "filteredPartIds": [
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a19",
+                "StartboardPart-LogsDashboardPart-7efbf5f0-db71-4be7-a80d-57afc5710a1b",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a1d",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a1f",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a21",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a23",
+                "StartboardPart-LogsDashboardPart-7efbf5f0-db71-4be7-a80d-57afc5710a25",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a27",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a29",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a2b",
+                "StartboardPart-LogsDashboardPart-7efbf5f0-db71-4be7-a80d-57afc5710a2d",
+                "StartboardPart-LogsDashboardPart-7efbf5f0-db71-4be7-a80d-57afc5710a2f",
+                "StartboardPart-LogsDashboardPart-7efbf5f0-db71-4be7-a80d-57afc5710a31",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a33",
+                "StartboardPart-MonitorChartPart-7efbf5f0-db71-4be7-a80d-57afc5710a35"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "MC4H Dashboard - API for FHIR ([AZUREAPIFORFHIR_NAME])",
+  "type": "Microsoft.Portal/dashboards",
+  "location": "INSERT LOCATION",
+  "tags": {
+    "hidden-title": "MC4H Dashboard - API for FHIR ([AZUREAPIFORFHIR_NAME])"
+  },
+  "apiVersion": "2015-08-01-preview"
+}
