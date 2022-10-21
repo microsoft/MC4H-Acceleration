@@ -4,9 +4,9 @@
 ## Contents
 
 * Working with the FHIR API
-    * [Sorting Query Results](./FHIR_Sorting.md)
     * [Adding New Patients via API](./FHIR_NewPatient.md)
     * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
+    * [Sorting Query Results](./FHIR_Sorting.md)
 * Testing & Data Management
     * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
     * [Deleting Data out of Dataverse](./Dataverse_Deletes.md)
