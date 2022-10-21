@@ -11,3 +11,4 @@
     * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
     * [Deleting Data out of Dataverse](./Dataverse_Deletes.md)
     * [Deleting Data out of Customer Insights](./CI_Deletes.md)
+    * [Monitoring FHIR Architecture with Azure Dashboard](./FHIR_Dashboard.md)
