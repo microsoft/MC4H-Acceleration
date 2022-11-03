@@ -131,14 +131,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/count",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Server requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRPROXY_APPINSIGHTS_NAME]",
                             "color": "#0078D4"
                           }
                         }
@@ -153,13 +153,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                             "menuid": "performance"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                               "menuid": "performance"
                             }
                           }
@@ -182,14 +182,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/count",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Server requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRPROXY_APPINSIGHTS_NAME]",
                             "color": "#0078D4"
                           }
                         }
@@ -205,13 +205,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                             "menuid": "performance"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                               "menuid": "performance"
                             }
                           }
@@ -352,14 +352,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/count",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Server requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "color": "#0078D4"
                           }
                         }
@@ -374,13 +374,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "menuid": "performance"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                               "menuid": "performance"
                             }
                           }
@@ -403,14 +403,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/count",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Server requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "color": "#0078D4"
                           }
                         }
@@ -426,13 +426,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "menuid": "performance"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                               "menuid": "performance"
                             }
                           }
@@ -774,14 +774,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/failed",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Failed requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRPROXY_APPINSIGHTS_NAME]",
                             "color": "#EC008C"
                           }
                         }
@@ -796,13 +796,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                             "menuid": "failures"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                               "menuid": "failures"
                             }
                           }
@@ -825,14 +825,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/failed",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Failed requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRPROXY_APPINSIGHTS_NAME]",
                             "color": "#EC008C"
                           }
                         }
@@ -848,13 +848,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                             "menuid": "failures"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]",
                               "menuid": "failures"
                             }
                           }
@@ -999,14 +999,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/failed",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Failed requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "color": "#EC008C"
                           }
                         }
@@ -1021,13 +1021,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "menuid": "failures"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                               "menuid": "failures"
                             }
                           }
@@ -1050,14 +1050,14 @@
                       "metrics": [
                         {
                           "resourceMetadata": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]"
                           },
                           "name": "requests/failed",
                           "aggregationType": 7,
                           "namespace": "microsoft.insights/components",
                           "metricVisualization": {
                             "displayName": "Failed requests",
-                            "resourceDisplayName": "[FHIRPROXYAPP_NAME]",
+                            "resourceDisplayName": "[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "color": "#EC008C"
                           }
                         }
@@ -1073,13 +1073,13 @@
                         "destinationBlade": {
                           "bladeName": "ResourceMenuBlade",
                           "parameters": {
-                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                            "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                             "menuid": "failures"
                           },
                           "extensionName": "HubsExtension",
                           "options": {
                             "parameters": {
-                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]",
+                              "id": "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                               "menuid": "failures"
                             }
                           }
@@ -1445,7 +1445,7 @@
                   "name": "Scope",
                   "value": {
                     "resourceIds": [
-                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXY_APPINSIGHTS_NAME]"
                     ]
                   },
                   "isOptional": true
@@ -1495,7 +1495,7 @@
                 },
                 {
                   "name": "PartSubTitle",
-                  "value": "[FHIRPROXYAPP_NAME]",
+                  "value": "[FHIRPROXY_APPINSIGHTS_NAME]",
                   "isOptional": true
                 },
                 {
@@ -1676,7 +1676,7 @@
                   "name": "Scope",
                   "value": {
                     "resourceIds": [
-                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRPROXYAPP_NAME]"
+                      "/subscriptions/[SUBSCRIPTION_ID]/resourceGroups/[RESOURCEGROUP_NAME]/providers/microsoft.insights/components/[FHIRSYNCAGENT_APPINSIGHTS_NAME]"
                     ]
                   },
                   "isOptional": true
@@ -1726,7 +1726,7 @@
                 },
                 {
                   "name": "PartSubTitle",
-                  "value": "[FHIRPROXYAPP_NAME]",
+                  "value": "[FHIRSYNCAGENT_APPINSIGHTS_NAME]",
                   "isOptional": true
                 },
                 {
@@ -2106,11 +2106,11 @@
       }
     }
   },
-  "name": "MC4H Dashboard - API for FHIR ([AZUREAPIFORFHIR_NAME])",
+  "name": "MC4H Dashboard - API for FHIR ([RESOURCEGROUP_NAME])",
   "type": "Microsoft.Portal/dashboards",
   "location": "INSERT LOCATION",
   "tags": {
-    "hidden-title": "MC4H Dashboard - API for FHIR ([AZUREAPIFORFHIR_NAME])"
+    "hidden-title": "MC4H Dashboard - API for FHIR ([RESOURCEGROUP_NAME])"
   },
   "apiVersion": "2015-08-01-preview"
 }
