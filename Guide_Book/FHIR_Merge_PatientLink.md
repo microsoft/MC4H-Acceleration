@@ -44,6 +44,22 @@ The specific event to be captured and the data contained will depend on the sour
     * You must add a “link” element to the Patient resource you no longer wish to get updates (PatientToMerge). Set this Patient’s “active” property to false. The “link” element’s “other” option should be set to the Id of the primary Patient and the “type” option should be set to “replaced-by”. The “active” attribute should be set to false.
     * Optionally, you might want to add a “link” element to the Patient resource you do want to keep updating (PatientMergeTo). The “link” element’s “other” option should be set to the Id of the Patient to be replaced and the “type” option should be set to “replaces”. (The “active” attribute should remain set to true. You shouldn’t merge any Patient into another inactive Patient.)
 
+
+### Merged Patient Example(s) in FHIR with Patient Link:
+
+Data before merge request:
+| id | identifiers | name | active | link |
+| -- | -- | -- | -- | -- |
+| 1234-5678-9012-3456 |	“mrn”: “123” | “text”: “Clark Kent”	| true	| |
+| 0987-6543-2109-8765 |	“mrn”: “098” | “text”: “Kal El” | true | |
+
+Data after request to merge Clark Kent into Kal El:
+
+| id | identifiers | name | active | link |
+| -- | -- | -- | -- | -- |
+| 1234-5678-9012-3456 | “mrn”: “123” | “text”: “Clark Kent” | false | “other”: “0987-6543-2109-87650987-6543-2109-8765” <br> “type”: “replaced-by” |
+| 0987-6543-2109-8765 | “mrn”: “098” | “text”: “Kal El” | true | “other”: “1234-5678-9012-3456” <br> “type”: “replaces” |
+
 __**EXAMPLE OF FHIR CALL: Get each Patient**__
 
 if you have the Patient’s unique ID… 
@@ -68,21 +84,6 @@ To be clear, the result of merging patient resources through links makes both Pa
 * If you query for the “merged to” Patient by ID, you will get that Patient and only the data associated with that Patient – including it’s “link” to the “merge” Patient. 
 * If you query for the “merge” Patient by ID, you will get that Patient – including it’s “link” to the “merged to” Patient.
 * If you query for the “merge” Patient using the $everything parameter,  you will get the “merge to” Patient and a warning that this “merge” Patient  has been replaced by the “merge to” Patient.
-
-### Merged Patient Example(s) in FHIR with Patient Link:
-
-Data before merge request:
-| id | identifiers | name | active | link |
-| -- | -- | -- | -- | -- |
-| 1234-5678-9012-3456 |	“mrn”: “123” | “text”: “Clark Kent”	| true	| |
-| 0987-6543-2109-8765 |	“mrn”: “098” | “text”: “Kal El” | true | |
-
-Data after request to merge Clark Kent into Kal El:
-
-| id | identifiers | name | active | link |
-| -- | -- | -- | -- | -- |
-| 1234-5678-9012-3456 | “mrn”: “123” | “text”: “Clark Kent” | false | “other”: “0987-6543-2109-87650987-6543-2109-8765” <br> “type”: “replaced-by” |
-| 0987-6543-2109-8765 | “mrn”: “098” | “text”: “Kal El” | true | “other”: “1234-5678-9012-3456” <br> “type”: “replaces” |
 
 ## Unmerging Patients Merged with Patient Link
 
@@ -116,14 +117,6 @@ The recommended option for unmerging Patients that used “link” elements as d
     * Else if provided MRN is found on more than one Patient… <br> 
     **We don’t know which to unmerge so log an error for manual intervention later**
 
-__**EXAMPLE OF FHIR CALL: Get patients with provided MRN in identifiers array**__
-
-`GET https://[fhirUrl]/Patient?identifier=[MRN]`
-
-__**EXAMPLE OF FHIR CALL: Update each Patient to remove the appropriate link attributes**__
-
-`PATCH https://[fhirUrl]/Patient/[PatientId]`
-
 ### Unmerged Example(s) in FHIR with Patient Link
 
 __Example #1: standard unmerge__ 
@@ -156,4 +149,12 @@ Data before unmerge request:
 | 0987-6543-2109-8765 | “mrn”: “098” | “text”: “Kal El” | true | “other”: “1234-5678-9012-3456” <br> “type”: “replaces” |
 
 > NOTE: If multiple Patients with the provided MRNs are uncovered, we can’t assume which Patient to unmerge and we need to log an error to be dealt with at a later date.
+
+__**EXAMPLE OF FHIR CALL: Get patients with provided MRN in identifiers array**__
+
+`GET https://[fhirUrl]/Patient?identifier=[MRN]`
+
+__**EXAMPLE OF FHIR CALL: Update each Patient to remove the appropriate link attributes**__
+
+`PATCH https://[fhirUrl]/Patient/[PatientId]`
 
