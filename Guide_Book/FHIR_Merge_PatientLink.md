@@ -8,6 +8,7 @@ Resources:
 * https://www.hl7.org/fhir/patient.html
 * https://www.hl7.org/fhir/patient-definitions.html#Patient.link
 * https://www.hl7.org/fhir/valueset-link-type.html#expansion
+* https://learn.microsoft.com/en-us/azure/healthcare-apis/azure-api-for-fhir/patient-everything
 
 The “link” element is not required and Patient resources may have more than one “link” element defined.
 The “link” element has two attributes:
