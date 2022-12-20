@@ -6,7 +6,7 @@
 
 | Asset | Description | Target Audience |
 | --- | --- | --- |
-| [Guidebook](./Guide_Book) | Snippets of Guidance for Microsoft Cloud for Healthcare Implementations | IT and Implementation Teams |
+| [Guidebook](./Guide_Book) | Snippets of Guidance for Healthcare Data or Microsoft Cloud for Healthcare Implementations | IT and Implementation Teams |
 | [Health and Life Sciences Blog: HLS Hack](https://techcommunity.microsoft.com/t5/healthcare-and-life-sciences/bg-p/HealthcareAndLifeSciencesBlog/label-name/HLS_Hack) | Articles from the HLS Hack team on the Microsoft Health and Life Sciences blog, including tips, build examples, accelerators and tools, and other topics | IT and Implementation Teams |
 | [Accelerators & Tools](./Tools.md) | List of known accelerators or tools that can kickstart your Healthcare Data or MC4H solution designs | IT and Implementation Teams |
 | [Deployment Training: A Patient Outreach User Story](./PatientOutreach_UserStoryTraining) | Deployment training of a single Patient Outreach User Story in the Microsoft Cloud for Healthcare | IT and Implementation Teams |
