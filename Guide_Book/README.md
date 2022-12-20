@@ -7,6 +7,8 @@
     * [Adding New Patients via API](./FHIR_NewPatient.md)
     * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
     * [Sorting Query Results](./FHIR_Sorting.md)
+* Working with the FHIR to Dataverse Sync Agent
+    * [Reprocessing Dead-Lettered Messages in Bulk (Azure Service Bus)](./SA_ReprocessDeadLetter.md)
 * Testing & Data Management
     * [Deleting Data out of the FHIR Service](./FHIR_Deletes.md)
     * [Deleting Data out of Dataverse](./Dataverse_Deletes.md)
