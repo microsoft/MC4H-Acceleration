@@ -19,7 +19,7 @@
 | Resource | Description | Type |
 |----|----|----|
 | [Postman](https://www.postman.com/) | An API platform for building, testing, and using APIs. Note: Free Postman cloud accounts require a login via email or a Google account. | 3rd Party Product |
-| [FHIR Search Sample Calls in Postman](https://github.com/microsoft/azure-healthcare-apis-workshop/tree/main/Challenge-04%20-%20Query%20and%20Search%20FHIR/samples) | Postman collection of sample API calls into Azure FHIR Servers, for creating and searching for common FHIR resources | Postman Collection Sample |
+| [FHIR Search Sample Calls in Postman](https://github.com/microsoft/azure-health-data-services-workshop/tree/main/resources/docs/samples) | Postman collection of sample API calls into Azure FHIR Servers, for creating and searching for common FHIR resources | Postman Collection Sample |
 | [jwt.ms](https://jwt.ms) | Safely decodes a JSON Web Token (JWT) into readable components for in-browser debugging/troubleshooting | Online tool |
 | [7Edit](http://7edit.com/home/) | A productivity tool for browsing, editing, validating HL7 messages and exchanging data with HL7 applications | 3rd Party Product |
 | [Parquet Viewer](https://github.com/mukunku/ParquetViewer) | Simple Windows desktop application for viewing & querying Apache Parquet files | Open Source Tool |
