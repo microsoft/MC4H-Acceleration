@@ -36,7 +36,7 @@ _-> Functions -> Monitor_
 
 ![FHIR Updates Function: Monitor](./Images/FHIRUpdates_monitor.png)
 
-In the example below, you can see a 403-Forbidden response from Dataverse. This tells us that the application ID we are using is un-authorized to write to Dataverse. 
+In the example below, you can see a 403-Forbidden response from Dataverse. This tells us that the application ID we are using is not authorized to write to Dataverse. 
 
 ![403-Forbidden response in Monitor](./Images/SA_Monitor_unable-to-write.png)
 
@@ -90,7 +90,7 @@ Here you can see the detailed bundle contents (if enabled by SA-LOGREQRESP setti
 ![function-monitor2](./Images/function-monitor2.png)
 
 # Historical: Querying for Errors Logged to Application Insights over a specific time range
-The Sync Agent is a backend process. It is often easiest to look at logs that have occurred in the past to find the problem.
+The Sync Agent is a backend process. It is often easiest to look at logs that have occurred in the past to find an issue.
 
 One way to view historical logs is through Application Insights.
 ![Navigate to Application Insights](./Images/QueryForErrors_NavigateToAI.png)
@@ -122,14 +122,14 @@ Ideally, if you have an id or a specific string that may be in a log, your searc
 
 The above case is a search for a Service Bus MessageId pulled from Service Bus Explorer. But, it can be any string you'd expect to be in the log. This gives us a reasonably short list to review. 
 
-Review any Exceptions first, then Requests and lastly Traces. Traces are usually quite verbose and require you to follow the flow to get enoughmeaning context. 
+Review any Exceptions first, then Requests and lastly Traces. Traces are usually quite verbose and require you to follow the flow to get enough  context. 
 
 In our example above, we have just requests and traces. Let's look at a request.
 
 ![AI initial results](./Images/QueryForErrors_AIInitialResults.png)
 The request gives context in the property list on the right (1), including the SessionId (2) which is in the format: Patient/[PatientId]
 
-We can look at the neighborind traces to see more information. The ones that are longer probably have more information. In this session, we clicked on the Trace at the bottom of the current view (3).
+We can look at the neighboring traces to see more information. The ones that are longer probably have more information. In this session, we clicked on the Trace at the bottom of the current view (3).
 
 ![AI search for string](./Images/QueryForErrors_AIWarningAndError.png)
 This gives us the information we needed. We see that there are warnings and an error listed. Here we see that this was an update operation on Dataverse (see blue box), we also know the patient that is having the problem. 
